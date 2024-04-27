@@ -1,5 +1,6 @@
 import { ReactNode, useEffect, useState } from "react";
 
+import Footer from "./footer";
 import Navbar from "../navbar";
 import ScrollBackToTopButton from "./button/scrollBackToTopButton";
 
@@ -18,10 +19,11 @@ const Page = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <div className="h-screen">
+    <div className="h-screen flex flex-col">
       <Navbar showDropShadow={showScrollElements} />
-      <div className="mx-[7%] mt-[220px]">{children}</div>
+      <div className="mx-[7%] mt-[220px] flex-grow">{children}</div>
       {showScrollElements ? <ScrollBackToTopButton /> : null}
+      <Footer />
     </div>
   );
 };
