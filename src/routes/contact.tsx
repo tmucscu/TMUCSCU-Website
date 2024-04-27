@@ -1,9 +1,9 @@
 import TextPage from "../textPage";
 
-const About = () => {
+const Contact = () => {
   return (
     <TextPage>
-      <TextPage.Header>About Us</TextPage.Header>
+      <TextPage.Header>Contact Us</TextPage.Header>
       <TextPage.Body>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum
         lobortis nulla imperdiet ornare.
@@ -24,4 +24,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;

@@ -1,6 +1,18 @@
 import Page from "./components/page";
 import { ReactNode } from "react";
 
+const Header = ({ children }: { children: ReactNode }) => {
+  return <h1 className="pb-[21px]">{children}</h1>;
+};
+
+const Subheader = ({ children }: { children: ReactNode }) => {
+  return <h2 className="pb-[21px] underline underline-offset-4">{children}</h2>;
+};
+
+const Body = ({ children }: { children: ReactNode }) => {
+  return <p className="pb-[21px]">{children}</p>;
+};
+
 const TextPage = ({ children }: { children: ReactNode }) => {
   return (
     <Page>
@@ -14,4 +26,7 @@ const TextPage = ({ children }: { children: ReactNode }) => {
   );
 };
 
+TextPage.Header = Header;
+TextPage.Subheader = Subheader;
+TextPage.Body = Body;
 export default TextPage;
