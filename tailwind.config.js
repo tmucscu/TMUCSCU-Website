@@ -7,6 +7,9 @@ export default {
         roboto: ["Roboto", "sans-serif"],
         kulim: ["Kulim Park", "sans-serif"],
       },
+      colors: {
+        active: "#095790",
+      },
     },
   },
   plugins: [],

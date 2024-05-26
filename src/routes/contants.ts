@@ -4,7 +4,7 @@ export enum Routes {
     ABOUT = "/about",
     TEAM = "/team",
     EVENTS = "/events",
-    MEETING_MINUTES = "/minutes",
+    MEETING_MINUTES = "https://drive.google.com/drive/folders/1dDwBoiifrl8SLrFytE-Se27NYegyOJsL?usp=sharing",
     CONTACT = "/contact",
-    WIKI = "/wiki"
+    WIKI = "https://wiki.tmucscu.com"
 }
