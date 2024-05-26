@@ -16,7 +16,7 @@ const ErrorPage = () => {
       <div className="mx-[7%] h-[50%] items-center grid grid-cols-5">
         <div className="col-span-3">
           <h1>Uh Oh!</h1>
-          <h2 className="no-underline pb-3">
+          <h2 className="pb-3">
             Sorry, we can't find the page you're looking for
           </h2>
           <p>{`Error ${error.status}: ${error.statusText || error.message}`}</p>

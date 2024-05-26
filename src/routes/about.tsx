@@ -8,7 +8,7 @@ const About = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum
         lobortis nulla imperdiet ornare.
       </p>
-      <h2 className="pb-[20px]">Lorem Ipsum</h2>
+      <h2 className="pb-[20px] underline underline-offset-4">Lorem Ipsum</h2>
       <p className="pb-[21px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum
         lobortis nulla imperdiet ornare. Quisque eleifend posuere eros. Nullam

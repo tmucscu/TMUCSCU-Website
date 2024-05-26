@@ -7,7 +7,7 @@ const Home = () => {
       <Navbar />
       <div className="mx-[7%] h-[50%] items-center grid grid-cols-5">
         <div className="col-span-3">
-          <h2 className="no-underline">Toronto Metropolitan University's</h2>
+          <h2>Toronto Metropolitan University's</h2>
           <h1>Computer Science Course Union</h1>
           <p className="pt-2">
             For over 20 years, the CSCU has been the organization representing
