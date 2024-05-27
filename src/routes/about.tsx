@@ -1,4 +1,4 @@
-import TextPage from "../TextPage";
+import TextPage from "../textPage";
 
 const About = () => {
   return (

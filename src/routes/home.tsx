@@ -1,11 +1,10 @@
 import Logo from "../assets/csculogo.png";
-import Navbar from "../navbar";
+import Page from "../components/page";
 
 const Home = () => {
   return (
-    <div className="h-screen">
-      <Navbar />
-      <div className="mx-[7%] h-[50%] items-center grid grid-cols-5">
+    <Page>
+      <div className="h-[50%] items-center grid grid-cols-5">
         <div className="col-span-3">
           <h2>Toronto Metropolitan University's</h2>
           <h1>Computer Science Course Union</h1>
@@ -18,7 +17,7 @@ const Home = () => {
           <img className="w-[250px]" src={Logo} />
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

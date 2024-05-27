@@ -1,4 +1,4 @@
-import Navbar from "./navbar";
+import Page from "./components/page";
 import { useRouteError } from "react-router-dom";
 
 const ErrorPage = () => {
@@ -11,9 +11,8 @@ const ErrorPage = () => {
   console.error(error);
 
   return (
-    <div className="h-screen">
-      <Navbar />
-      <div className="mx-[7%] h-[50%] items-center grid grid-cols-5">
+    <Page>
+      <div className="h-[50%] items-center grid grid-cols-5">
         <div className="col-span-3">
           <h1>Uh Oh!</h1>
           <h2 className="pb-3">
@@ -25,7 +24,7 @@ const ErrorPage = () => {
           <h1 className="text-9xl">?</h1>
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

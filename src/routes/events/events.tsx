@@ -1,5 +1,5 @@
 import EventCard from "./eventCard";
-import TextPage from "../../TextPage";
+import TextPage from "../../textPage";
 
 export type EventType = {
   name: string;

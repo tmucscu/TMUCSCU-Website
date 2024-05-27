@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import { RouteTypes, Routes } from "./routes/contants";
-import { useEffect, useState } from "react";
 
 import clsx from "clsx";
 import logo from "./assets/csculogo.png";
@@ -40,19 +39,7 @@ const NavbarLogo = () => {
   );
 };
 
-const Navbar = () => {
-  const [showDropShadow, setShowDropShadow] = useState(false);
-
-  const changeNavbar = () => {
-    setShowDropShadow(window.scrollY > 0);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNavbar);
-
-    return () => window.removeEventListener("scroll", changeNavbar);
-  }, []);
-
+const Navbar = ({ showDropShadow = false }: { showDropShadow: boolean }) => {
   return (
     <nav
       className={clsx(
