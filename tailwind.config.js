@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "selector",
   theme: {
     extend: {
       fontFamily: {
@@ -9,6 +10,8 @@ export default {
       },
       colors: {
         active: "#095790",
+        activeDark: "#0F75BC",
+        dark: "#1D1D1D",
       },
       keyframes: {
         "slide-in-fade-in": {

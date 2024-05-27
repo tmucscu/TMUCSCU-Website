@@ -18,7 +18,7 @@ const TextPage = ({ children }: { children: ReactNode }) => {
     <Page>
       <div className="items-center grid grid-cols-5">
         <div className="col-span-3">{children}</div>
-        <div className="col-span-2 flex justify-center h-full">
+        <div className="col-span-2 flex justify-center h-full dark:text-white">
           Image carousel here lol
         </div>
       </div>

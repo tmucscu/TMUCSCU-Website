@@ -18,14 +18,16 @@ const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
 
   return (
     <div className="flex justify-center items-center">
-      <Link
-        className={clsx(
-          "hover:text-active",
-          Routes[routeKey] === location.pathname && "text-active font-bold"
-        )}
-        to={Routes[routeKey]}
-      >
-        <h3>{NavbarTitles[routeKey]}</h3>
+      <Link to={Routes[routeKey]}>
+        <h3
+          className={clsx(
+            "hover:text-active dark:hover:text-activeDark",
+            Routes[routeKey] === location.pathname &&
+              "text-active font-bold dark:text-activeDark"
+          )}
+        >
+          {NavbarTitles[routeKey]}
+        </h3>
       </Link>
     </div>
   );
@@ -43,7 +45,7 @@ const Navbar = ({ showDropShadow = false }: { showDropShadow: boolean }) => {
   return (
     <nav
       className={clsx(
-        "fixed w-full top-0 bg-white py-6 grid grid-cols-7",
+        "fixed w-full top-0 bg-white py-6 grid grid-cols-7 z-10 dark:bg-dark",
         showDropShadow && "drop-shadow-lg"
       )}
     >

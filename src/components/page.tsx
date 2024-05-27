@@ -19,9 +19,9 @@ const Page = ({ children }: { children: ReactNode }) => {
   }, []);
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col dark:bg-dark">
       <Navbar showDropShadow={showScrollElements} />
-      <div className="mx-[7%] mt-[220px] flex-grow animate-slide-in-fade-in">
+      <div className="px-[7%] pt-[220px] flex-grow animate-slide-in-fade-in dark:bg-dark">
         {children}
       </div>
       {showScrollElements ? <ScrollBackToTopButton /> : null}

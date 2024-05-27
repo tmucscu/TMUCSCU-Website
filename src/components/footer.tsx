@@ -1,3 +1,4 @@
+import DarkModeButton from "./button/darkModeButton";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkIcon from "@mui/icons-material/Link";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -22,7 +23,7 @@ const FooterIcon = ({
 
 const Footer = () => {
   return (
-    <div className="w-full bg-active flex justify-center items-center">
+    <div className="w-full bg-active flex justify-center items-center z-10">
       <FooterIcon link="https://linktr.ee/tmu_cscu">
         <LinkIcon fontSize="large" />
       </FooterIcon>
@@ -41,6 +42,9 @@ const Footer = () => {
           src="https://img.icons8.com/?size=100&id=exHpmLpQEPmr&format=png&color=FFFFFF"
         />
       </FooterIcon>
+      <div className="absolute right-6">
+        <DarkModeButton />
+      </div>
     </div>
   );
 };

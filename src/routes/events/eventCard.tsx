@@ -27,7 +27,9 @@ const EventCard = ({
     <div
       className={clsx(
         "grid grid-cols-10 bg-opacity-40 rounded-2xl p-10 gap-10 mb-10",
-        inverted ? "border-[1px] border-black" : "bg-active"
+        inverted
+          ? "border-[1px] border-black dark:border-white"
+          : "bg-active dark:bg-activeDark dark:bg-opacity-20"
       )}
     >
       <div className="col-span-7">
@@ -39,7 +41,7 @@ const EventCard = ({
           {event.details}
         </p>
 
-        <div className="flex justify-end">
+        <div className="flex justify-end pt-2">
           <TextButton
             text={opened ? "Read Less ▲" : "Read More ▼"}
             onClick={() => {

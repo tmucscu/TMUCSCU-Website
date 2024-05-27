@@ -14,7 +14,7 @@ const TeamCard = ({ member }: { member: MemberType }) => {
         src={member.imageUrl}
       />
       <p className="mt-4">{member.name}</p>
-      <p className="mb-10 hover:text-active">
+      <p className="mb-10 hover:text-active dark:hover:text-activeDark">
         <a href={`mailto:${member.email}`}>{member.email}</a>
       </p>
     </div>
