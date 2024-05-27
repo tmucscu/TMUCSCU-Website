@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from "react";
 
 import Navbar from "../navbar";
+import ScrollBackToTopButton from "./button/scrollBackToTopButton";
 
 const Page = ({ children }: { children: ReactNode }) => {
   // shows navbar dropshadow and scroll back to top button
@@ -20,6 +21,7 @@ const Page = ({ children }: { children: ReactNode }) => {
     <div className="h-screen">
       <Navbar showDropShadow={showScrollElements} />
       <div className="mx-[7%]">{children}</div>
+      {showScrollElements ? <ScrollBackToTopButton /> : null}
     </div>
   );
 };
