@@ -51,8 +51,8 @@ const Navbar = ({ showDropShadow = false }: { showDropShadow: boolean }) => {
       <NavbarTitle routeKey={"TEAM"} />
       <NavbarTitle routeKey={"EVENTS"} />
       <NavbarLogo />
-      <NavbarTitle routeKey={"MEETING_MINUTES"} />
       <NavbarTitle routeKey={"CONTACT"} />
+      <NavbarTitle routeKey={"MEETING_MINUTES"} />
       <NavbarTitle routeKey={"WIKI"} />
     </nav>
   );
