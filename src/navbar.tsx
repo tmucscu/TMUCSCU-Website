@@ -43,7 +43,7 @@ const Navbar = ({ showDropShadow = false }: { showDropShadow: boolean }) => {
   return (
     <nav
       className={clsx(
-        "sticky top-0 bg-white py-6 mb-[100px] grid grid-cols-7",
+        "fixed w-full top-0 bg-white py-6 grid grid-cols-7",
         showDropShadow && "drop-shadow-lg"
       )}
     >

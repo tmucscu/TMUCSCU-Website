@@ -20,7 +20,7 @@ const Page = ({ children }: { children: ReactNode }) => {
   return (
     <div className="h-screen">
       <Navbar showDropShadow={showScrollElements} />
-      <div className="mx-[7%]">{children}</div>
+      <div className="mx-[7%] mt-[220px]">{children}</div>
       {showScrollElements ? <ScrollBackToTopButton /> : null}
     </div>
   );
