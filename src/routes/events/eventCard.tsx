@@ -30,7 +30,7 @@ const EventCard = ({
         inverted ? "border-[1px] border-black" : "bg-active"
       )}
     >
-      <div className="relative col-span-7">
+      <div className="col-span-7">
         <h2 className="font-bold">{event.name}</h2>
         <p className="font-kulim">{formattedDateAndLocation}</p>
         <br />
@@ -39,7 +39,7 @@ const EventCard = ({
           {event.details}
         </p>
 
-        <div className="absolute right-0">
+        <div className="flex justify-end">
           <TextButton
             text={opened ? "Read Less ▲" : "Read More ▼"}
             onClick={() => {

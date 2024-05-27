@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { RouteTypes, Routes } from "./routes/contants";
+import { useEffect, useState } from "react";
 
 import clsx from "clsx";
 import logo from "./assets/csculogo.png";
@@ -17,7 +18,7 @@ const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
   const location = useLocation();
 
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center">
       <Link
         className={clsx(
           "hover:text-active",
@@ -40,8 +41,25 @@ const NavbarLogo = () => {
 };
 
 const Navbar = () => {
+  const [showDropShadow, setShowDropShadow] = useState(false);
+
+  const changeNavbar = () => {
+    setShowDropShadow(window.scrollY > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbar);
+
+    return () => window.removeEventListener("scroll", changeNavbar);
+  }, []);
+
   return (
-    <nav className="pt-6 pb-[100px] grid grid-cols-7">
+    <nav
+      className={clsx(
+        "sticky top-0 bg-white py-6 mb-[100px] grid grid-cols-7",
+        showDropShadow && "drop-shadow-lg"
+      )}
+    >
       <NavbarTitle routeKey={"ABOUT"} />
       <NavbarTitle routeKey={"TEAM"} />
       <NavbarTitle routeKey={"EVENTS"} />
