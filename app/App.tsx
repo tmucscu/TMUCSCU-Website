@@ -1,5 +1,9 @@
-import Logo from "../assets/csculogo.png";
-import Page from "../components/page";
+"use client";
+
+import "../styles/globals.css";
+
+import Page from "../components/pages/page";
+import logo from "../public/csculogo.png";
 
 const Home = () => {
   return (
@@ -14,7 +18,7 @@ const Home = () => {
           </p>
         </div>
         <div className="col-span-2 flex justify-center">
-          <img className="w-[250px]" src={Logo} />
+          <img className="w-[250px]" src={logo.src} />
         </div>
       </div>
     </Page>

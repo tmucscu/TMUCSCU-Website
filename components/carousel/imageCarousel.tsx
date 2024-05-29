@@ -1,8 +1,11 @@
+"use client";
+
 import { useEffect, useState } from "react";
 
 import Slider from "react-slick";
-import axios from "axios";
 import clsx from "clsx";
+
+// import axios from "axios";
 
 // TODO: Clean up this mess
 // TODO: useContext so state is maintained across pages (carousel shouldn't reset)

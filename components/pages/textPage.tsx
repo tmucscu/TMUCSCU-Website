@@ -1,5 +1,7 @@
-import ImageCarousel from "./imageCarousel";
-import Page from "./components/page";
+"use client";
+
+import ImageCarousel from "../carousel/imageCarousel";
+import Page from "./page";
 import { ReactNode } from "react";
 
 const Header = ({ children }: { children: ReactNode }) => {

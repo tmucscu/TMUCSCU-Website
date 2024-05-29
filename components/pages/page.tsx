@@ -1,8 +1,10 @@
+"use client";
+
 import { ReactNode, useEffect, useState } from "react";
 
-import Footer from "./footer";
-import Navbar from "../navbar";
-import ScrollBackToTopButton from "./button/scrollBackToTopButton";
+import Footer from "../footer/footer";
+import Navbar from "../navbar/navbar";
+import ScrollBackToTopButton from "../button/scrollBackToTopButton";
 
 const Page = ({ children }: { children: ReactNode }) => {
   // shows navbar dropshadow and scroll back to top button

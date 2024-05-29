@@ -1,8 +1,11 @@
-import { Link, useLocation } from "react-router-dom";
-import { RouteTypes, Routes } from "./routes/contants";
+import "../../styles/globals.css";
 
+import { RouteTypes, Routes } from "../constants";
+
+import Link from "next/link";
 import clsx from "clsx";
-import logo from "./assets/csculogo.png";
+import logo from "../../public/csculogo.png";
+import { usePathname } from "next/navigation";
 
 const NavbarTitles = {
   ABOUT: "ABOUT",
@@ -14,15 +17,15 @@ const NavbarTitles = {
 };
 
 const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
-  const location = useLocation();
+  const pathname = usePathname();
 
   return (
     <div className="flex justify-center items-center">
-      <Link to={Routes[routeKey]}>
+      <Link href={Routes[routeKey]}>
         <h3
           className={clsx(
             "hover:text-active dark:hover:text-activeDark",
-            Routes[routeKey] === location.pathname &&
+            Routes[routeKey] === pathname &&
               "text-active font-bold dark:text-activeDark"
           )}
         >
@@ -35,8 +38,8 @@ const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
 
 const NavbarLogo = () => {
   return (
-    <Link className="flex justify-center items-center" to={"/"}>
-      <img className="w-16" src={logo} />
+    <Link className="flex justify-center items-center" href={"/"}>
+      <img className="w-16" src={logo.src} />
     </Link>
   );
 };

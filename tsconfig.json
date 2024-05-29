@@ -12,14 +12,41 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    "esModuleInterop": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src",
+    "./dist/types/**/*.ts",
+    "./next-env.d.ts",
+    "app",
+    "components/events/eventCard.tsx",
+    "components/events/events.tsx",
+    "components/events/utils.ts",
+    "components/button",
+    "components/footer/footer.tsx",
+    "components/constants.ts",
+    "components/navbar/navbar.tsx",
+    "components/pages/page.tsx",
+    "components/pages/textPage.tsx",
+    "components/carousel/imageCarousel.tsx"
+  ],
+  "exclude": ["./node_modules"],
+  "references": []
 }

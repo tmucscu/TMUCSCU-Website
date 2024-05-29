@@ -1,9 +1,13 @@
-import TextPage from "../textPage";
+"use client";
 
-const Contact = () => {
+import "../../styles/globals.css";
+
+import TextPage from "../../components/pages/textPage";
+
+const About = () => {
   return (
     <TextPage>
-      <TextPage.Header>Contact Us</TextPage.Header>
+      <TextPage.Header>About Us</TextPage.Header>
       <TextPage.Body>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum
         lobortis nulla imperdiet ornare.
@@ -24,4 +28,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default About;

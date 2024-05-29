@@ -1,14 +1,15 @@
-import Page from "./components/page";
-import { useRouteError } from "react-router-dom";
+"use client";
 
-const ErrorPage = () => {
+import "../styles/globals.css";
+
+import Page from "../components/pages/page";
+
+const Error = () => {
   type error = {
     status?: number;
     statusText?: string;
     message?: string;
   };
-  const error = useRouteError() as error;
-  console.error(error);
 
   return (
     <Page>
@@ -18,7 +19,7 @@ const ErrorPage = () => {
           <h2 className="pb-3">
             Sorry, we can't find the page you're looking for
           </h2>
-          <p>{`Error ${error.status}: ${error.statusText || error.message}`}</p>
+          <p>Error 404</p>
         </div>
         <div className="col-span-2 flex justify-center">
           <h1 className="text-9xl">?</h1>
@@ -28,4 +29,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default Error;

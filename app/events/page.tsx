@@ -1,5 +1,9 @@
-import EventCard from "./eventCard";
-import TextPage from "../../textPage";
+"use client";
+
+import "../../styles/globals.css";
+
+import EventCard from "../../components/events/eventCard";
+import TextPage from "../../components/pages/textPage";
 
 export type EventType = {
   name: string;

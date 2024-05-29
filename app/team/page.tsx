@@ -1,5 +1,9 @@
-import Page from "../../components/page";
-import TeamSection from "./teamSection";
+"use client";
+
+import "../../styles/globals.css";
+
+import Page from "../../components/pages/page";
+import TeamSection from "../../components/team/teamSection";
 
 const Team = () => {
   const team = {

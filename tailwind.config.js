@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "selector",
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
-        kulim: ["Kulim Park", "sans-serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        kulim: ["var(--font-kulim)", "sans-serif"],
       },
       colors: {
         active: "#095790",

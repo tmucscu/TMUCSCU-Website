@@ -1,4 +1,4 @@
-import DarkModeButton from "./button/darkModeButton";
+import DarkModeButton from "../button/darkModeButton";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkIcon from "@mui/icons-material/Link";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

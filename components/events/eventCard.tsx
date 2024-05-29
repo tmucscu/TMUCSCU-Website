@@ -1,7 +1,9 @@
+"use client";
+
 import { EventType } from "./events";
-import PrimaryRoundButton from "../../components/button/primaryRoundButton";
-import SecondaryRoundButton from "../../components/button/secondaryRoundButton";
-import TextButton from "../../components/button/textButton";
+import PrimaryRoundButton from "../button/primaryRoundButton";
+import SecondaryRoundButton from "../button/secondaryRoundButton";
+import TextButton from "../button/textButton";
 import clsx from "clsx";
 import { formatDateAndLocation } from "./utils";
 import { useState } from "react";
