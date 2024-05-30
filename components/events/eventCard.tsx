@@ -1,6 +1,6 @@
 "use client";
 
-import { EventType } from "./events";
+import { EventType } from "../../app/events/page";
 import PrimaryRoundButton from "../button/primaryRoundButton";
 import SecondaryRoundButton from "../button/secondaryRoundButton";
 import TextButton from "../button/textButton";

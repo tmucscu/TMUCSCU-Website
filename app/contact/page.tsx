@@ -6,7 +6,7 @@ import TextPage from "../../components/pages/textPage";
 
 const Contact = () => {
   return (
-    <TextPage>
+    <TextPage slidesToShow={1}>
       <TextPage.Header>Contact Us</TextPage.Header>
       <TextPage.Body>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum

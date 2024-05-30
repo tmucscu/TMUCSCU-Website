@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${kulim_park.variable} ${roboto.variable}`}>
       <head>
         <link
           rel="stylesheet"

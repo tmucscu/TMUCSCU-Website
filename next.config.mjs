@@ -10,7 +10,6 @@ const nextConfig = {
       pathname: "**",
     },
   ],
-  trailingSlash: true,
 };
 
 export default nextConfig;

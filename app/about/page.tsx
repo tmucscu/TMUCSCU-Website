@@ -6,7 +6,7 @@ import TextPage from "../../components/pages/textPage";
 
 const About = () => {
   return (
-    <TextPage>
+    <TextPage slidesToShow={1}>
       <TextPage.Header>About Us</TextPage.Header>
       <TextPage.Body>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum

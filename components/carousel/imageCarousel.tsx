@@ -4,54 +4,25 @@ import { useEffect, useState } from "react";
 
 import Slider from "react-slick";
 import clsx from "clsx";
+import { getImageIdsForCarousel } from "./utils";
 
-// TODO: useContext so state is maintained across pages (carousel shouldn't reset)
-const ImageCarousel = () => {
-  type Carousel = {
-    images: string[];
-    ttl: string;
-  };
-
+export type Carousel = {
+  images: string[];
+  ttl: string;
+};
+const ImageCarousel = ({ slidesToShow }: { slidesToShow: number }) => {
   const [carouselImages, setCarouselImages] = useState<string[]>([]);
+
   useEffect(() => {
-    const TWELVE_HOURS_IN_MS = 12 * 60 * 60 * 1000;
-
-    const getImageIdsForCarousel = async () => {
-      const carouselCache = localStorage.getItem("carousel");
-
-      const carousel: Carousel | null = carouselCache
-        ? JSON.parse(carouselCache)
-        : null;
-
-      const now = new Date().getTime();
-
-      // fetch images if no carousel in local storage or images are empty or ttl expired
-      const shouldFetchImages =
-        !carousel ||
-        (carousel &&
-          (carousel.images.length === 0 ||
-            now - Number(carousel?.ttl) >= TWELVE_HOURS_IN_MS));
-
-      if (shouldFetchImages) {
-        const response = await fetch("/api/carousel");
-        const { imageIds } = await response.json();
-        localStorage.setItem(
-          "carousel",
-          JSON.stringify({ images: imageIds, ttl: now.toString() })
-        );
-        setCarouselImages(imageIds);
-      } else if (carousel) {
-        setCarouselImages(carousel.images);
-      }
-    };
-
-    getImageIdsForCarousel();
+    getImageIdsForCarousel().then((imageIds) => {
+      setCarouselImages(imageIds);
+    });
   }, []);
 
   const settings = {
     infinite: true,
     speed: 3000,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,

@@ -16,13 +16,19 @@ const Body = ({ children }: { children: ReactNode }) => {
   return <p className="pb-[21px]">{children}</p>;
 };
 
-const TextPage = ({ children }: { children: ReactNode }) => {
+const TextPage = ({
+  slidesToShow,
+  children,
+}: {
+  children: ReactNode;
+  slidesToShow: number;
+}) => {
   return (
     <Page>
       <div className="grid grid-cols-5">
         <div className="col-span-3">{children}</div>
         <div className="col-span-2 flex justify-center">
-          <ImageCarousel />
+          <ImageCarousel slidesToShow={slidesToShow} />
         </div>
       </div>
     </Page>

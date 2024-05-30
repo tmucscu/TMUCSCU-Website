@@ -44,7 +44,7 @@ const Events = () => {
   ];
 
   return (
-    <TextPage>
+    <TextPage slidesToShow={2}>
       <h1 className="pb-[21px]">Upcoming Events</h1>
       {events.map((event, index) => {
         return (
