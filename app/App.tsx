@@ -8,7 +8,7 @@ import logo from "../public/csculogo.png";
 const Home = () => {
   return (
     <Page>
-      <div className="h-[50%] items-center grid grid-cols-5">
+      <div className="h-[50%] items-center md:grid md:grid-cols-5">
         <div className="col-span-3">
           <h2>Toronto Metropolitan University's</h2>
           <h1>Computer Science Course Union</h1>
@@ -17,7 +17,7 @@ const Home = () => {
             all the undergraduate Computer Science students at TMU.
           </p>
         </div>
-        <div className="col-span-2 flex justify-center">
+        <div className="hidden md:flex col-span-2 justify-center">
           <img className="w-[250px]" src={logo.src} />
         </div>
       </div>

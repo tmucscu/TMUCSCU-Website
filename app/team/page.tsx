@@ -80,6 +80,7 @@ const Team = () => {
 
   return (
     <Page>
+      <h1 className="grid justify-center mb-2">President</h1>
       <TeamSection members={team.President} />
       <h1 className="grid justify-center mb-10">Executives</h1>
       <TeamSection members={team.Executives} />

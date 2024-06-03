@@ -26,8 +26,8 @@ const TextPage = ({
   return (
     <Page>
       <div className="grid grid-cols-5">
-        <div className="col-span-3">{children}</div>
-        <div className="col-span-2 flex justify-center">
+        <div className="col-span-5 xl:col-span-3">{children}</div>
+        <div className="xl:col-span-2 flex justify-center">
           <ImageCarousel slidesToShow={slidesToShow} />
         </div>
       </div>

@@ -1,11 +1,17 @@
 import { MemberType } from "./teamCard";
 import TeamRow from "./teamRow";
+import WidthContext from "../../app/context/WidthContext";
+import { useContext } from "react";
 
 const TeamSection = ({ members }: { members: MemberType[] }) => {
+  const width = useContext(WidthContext);
+
+  const maxMemberPerRow = width > 1024 ? 3 : 1;
+
   const memberRows: MemberType[][] = [];
   const splitMembers = (members: MemberType[]) => {
-    for (let i = 0; i < members.length; i += 3) {
-      const chunk = members.slice(i, i + 3);
+    for (let i = 0; i < members.length; i += maxMemberPerRow) {
+      const chunk = members.slice(i, i + maxMemberPerRow);
       memberRows.push(chunk);
     }
   };

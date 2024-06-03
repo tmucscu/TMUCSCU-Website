@@ -29,6 +29,9 @@ export default {
           },
         },
       },
+      screens: {
+        lg: "1040px",
+      },
       animation: {
         "slide-in-fade-in": "slide-in-fade-in 0.5s forwards",
       },

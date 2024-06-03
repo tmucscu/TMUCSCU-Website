@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import Slider from "react-slick";
+import WidthContext from "../../app/context/WidthContext";
 import clsx from "clsx";
 import { getImageIdsForCarousel } from "./utils";
 
@@ -11,6 +12,8 @@ export type Carousel = {
   ttl: string;
 };
 const ImageCarousel = ({ slidesToShow }: { slidesToShow: number }) => {
+  const width = useContext(WidthContext);
+  const isLargeScreen = width >= 1280;
   const [carouselImages, setCarouselImages] = useState<string[]>([]);
 
   useEffect(() => {
@@ -31,6 +34,10 @@ const ImageCarousel = ({ slidesToShow }: { slidesToShow: number }) => {
     autoplaySpeed: 4000,
     cssEase: "linear",
   };
+
+  if (!isLargeScreen) {
+    return null;
+  }
 
   return (
     <Slider className="overflow-hidden w-[600px]" {...settings}>

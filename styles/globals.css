@@ -10,7 +10,7 @@
         @apply font-kulim text-2xl dark:text-white;
     }
     h3 {
-        @apply font-kulim text-xl dark:text-white;
+        @apply font-kulim text-lg xl:text-xl dark:text-white;
     }
     p {
       @apply font-roboto text-base dark:text-white;

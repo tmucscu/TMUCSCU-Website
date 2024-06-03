@@ -8,7 +8,9 @@ export type MemberType = {
 const TeamCard = ({ member }: { member: MemberType }) => {
   return (
     <div className="grid justify-items-center">
-      <h1 className="mb-4 text-4xl">{member.position}</h1>
+      <h1 className="mb-4 text-3xl">
+        {member.position === "President" ? "" : member.position}
+      </h1>
       <img
         className="w-36 rounded-full border-2 border-black"
         src={member.imageUrl}

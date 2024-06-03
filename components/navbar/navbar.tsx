@@ -3,11 +3,13 @@ import "../../styles/globals.css";
 import { RouteTypes, Routes } from "../constants";
 
 import Link from "next/link";
+import WidthContext from "../../app/context/WidthContext";
 import clsx from "clsx";
 import logo from "../../public/csculogo.png";
+import { useContext } from "react";
 import { usePathname } from "next/navigation";
 
-const NavbarTitles = {
+export const NavbarTitles = {
   ABOUT: "ABOUT",
   TEAM: "TEAM",
   EVENTS: "EVENTS",
@@ -17,10 +19,19 @@ const NavbarTitles = {
 };
 
 const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
+  const getNavbarTitle = (routeKey: RouteTypes) => {
+    if (routeKey === "MEETING_MINUTES") {
+      return width < 768 || width > 1040 ? NavbarTitles[routeKey] : "MEETINGS";
+    }
+    return NavbarTitles[routeKey];
+  };
+
+  const width = useContext(WidthContext);
+
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <Link href={Routes[routeKey]}>
         <h3
           className={clsx(
@@ -29,7 +40,7 @@ const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
               "text-active font-bold dark:text-activeDark"
           )}
         >
-          {NavbarTitles[routeKey]}
+          {getNavbarTitle(routeKey)}
         </h3>
       </Link>
     </div>
@@ -48,7 +59,7 @@ const Navbar = ({ showDropShadow = false }: { showDropShadow: boolean }) => {
   return (
     <nav
       className={clsx(
-        "fixed w-full top-0 bg-white py-6 grid grid-cols-7 z-10 dark:bg-dark",
+        "fixed w-full top-0 bg-white py-6 grid-cols-7 z-10 dark:bg-dark hidden md:grid",
         showDropShadow && "drop-shadow-lg"
       )}
     >
