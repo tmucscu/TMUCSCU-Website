@@ -5,11 +5,12 @@ import "../styles/globals.css";
 import Page from "../components/pages/page";
 
 const Error = () => {
-  type error = {
-    status?: number;
-    statusText?: string;
-    message?: string;
-  };
+  // TODO: add error types per page
+  // type error = {
+  //   status?: number;
+  //   statusText?: string;
+  //   message?: string;
+  // };
 
   return (
     <Page>

@@ -7,7 +7,7 @@ type Data = {
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  return new Promise<void>((resolve, reject) => {
+  return new Promise<void>((resolve) => {
     getImageIdsFromGFolder(process.env.GDRIVE_FOLDER_ID).then((imageIds) => {
       res.status(200).json({ imageIds: imageIds });
       resolve();

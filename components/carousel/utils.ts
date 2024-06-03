@@ -1,4 +1,5 @@
 import {Carousel} from "./imageCarousel"
+import { doesWindowExist } from "../../app/utils";
 
 export const shuffleImages = (imageIds: string[]) => {
     return imageIds.sort(() => Math.random() - 0.5);
@@ -9,6 +10,10 @@ const TWELVE_HOURS_IN_MS = 12 * 60 * 60 * 1000;
 
 
 export const getImageIdsForCarousel = async () => {
+    if (!doesWindowExist) {
+        return []
+    }
+    
     const carouselCache = localStorage.getItem("carousel");
 
     const carousel: Carousel | null = carouselCache

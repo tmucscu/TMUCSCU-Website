@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import { doesWindowExist } from "../../app/utils";
 
 const DarkModeButton = () => {
-  const initialDarkModeState = localStorage.getItem("darkMode") === "true";
+  const initialDarkModeState = doesWindowExist
+    ? localStorage.getItem("darkMode") === "true"
+    : false;
   const [darkMode, setDarkMode] = useState(initialDarkModeState);
 
   useEffect(() => {

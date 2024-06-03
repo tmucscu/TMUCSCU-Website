@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useContext, useEffect, useState } from "react";
 
 import Footer from "../footer/footer";
 import MobileMenu from "../mobileMenu/mobileMenu";
@@ -9,7 +9,7 @@ import ScrollBackToTopButton from "../button/scrollBackToTopButton";
 import WidthContext from "../../app/context/WidthContext";
 
 const Page = ({ children }: { children: ReactNode }) => {
-  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [width, setWidth] = useState(useContext(WidthContext));
   // shows navbar dropshadow and scroll back to top button
   const [showScrollElements, setShowScrollElements] = useState(false);
 

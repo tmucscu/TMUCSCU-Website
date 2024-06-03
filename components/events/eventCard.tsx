@@ -8,6 +8,7 @@ import SecondaryRoundButton from "../button/secondaryRoundButton";
 import TextButton from "../button/textButton";
 import WidthContext from "../../app/context/WidthContext";
 import clsx from "clsx";
+import { doesWindowExist } from "../../app/utils";
 import { formatDateAndLocation } from "./utils";
 
 const EventCard = ({
@@ -69,8 +70,10 @@ const EventCard = ({
           <RoundButton
             text={"Sign Up"}
             onClick={() => {
-              const win = window.open(event.signUpLink, "_blank");
-              win?.focus();
+              if (doesWindowExist) {
+                const win = window.open(event.signUpLink, "_blank");
+                win?.focus();
+              }
             }}
           />
         </div>
