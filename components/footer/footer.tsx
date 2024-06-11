@@ -42,7 +42,7 @@ const Footer = () => {
           src="https://img.icons8.com/?size=100&id=exHpmLpQEPmr&format=png&color=FFFFFF"
         />
       </FooterIcon>
-      <div className="absolute right-6">
+      <div className="absolute right-0 md:right-6">
         <DarkModeButton />
       </div>
     </div>
