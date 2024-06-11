@@ -42,7 +42,7 @@ const MobileMenu = ({ showDropShadow }: { showDropShadow: boolean }) => {
       <div className="grid grid-cols-2">
         <div className="flex">
           <Link className="flex" href={"/"}>
-            <img className="h-24" src={logo.src} />
+            <img className="h-16" src={logo.src} />
           </Link>
         </div>
         <BurgerMenu
