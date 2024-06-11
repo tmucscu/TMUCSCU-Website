@@ -5,3 +5,7 @@ export type ButtonType = {
     onClick: MouseEventHandler<HTMLButtonElement>;
   };
   
+  export type LinkTextButtonType = {
+    text: string;
+    link: string;
+  };

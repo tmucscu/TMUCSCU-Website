@@ -2,27 +2,57 @@
 
 import "../../styles/globals.css";
 
+import LinkTextButton from "../../components/button/linkTextButton";
 import TextPage from "../../components/pages/textPage";
 
 const About = () => {
   return (
-    <TextPage slidesToShow={1}>
+    <TextPage slidesToShow={2}>
       <TextPage.Header>About Us</TextPage.Header>
       <TextPage.Body>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum
-        lobortis nulla imperdiet ornare.
+        The CSCU is the Undergraduate Computer Science Course Union at Toronto
+        Metropolitan University (formerly named Ryerson University).
+        <br />
+        <br />
+        We focus on three main pillars: academics, careers, and social life.
       </TextPage.Body>
-      <TextPage.Subheader>Lorem Ipsum</TextPage.Subheader>
+      <TextPage.Subheader>Advocacy</TextPage.Subheader>
       <TextPage.Body>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ipsum
-        lobortis nulla imperdiet ornare. Quisque eleifend posuere eros. Nullam
-        ut elementum velit. Sed dictum consectetur enim, at condimentum sem
-        tempor at. Quisque eu interdum dolor, vitae imperdiet ante. Donec sapien
-        ipsum, feugiat at vestibulum nec, eleifend eget diam. Aliquam vehicula
-        venenatis urna vitae vehicula. Proin interdum sit amet tellus eget
-        feugiat. Aliquam pellentesque dui erat, vitae dictum purus consectetur
-        sit amet. Curabitur feugiat diam in massa aliquam, ornare finibus nibh
-        faucibus.
+        The main goal of the CSCU is first and foremost, advocacy on behalf of
+        full time students in the computer science program at Toronto
+        Metropolitan University.
+        <br />
+        <br />
+        From academics to facilities, the CSCU has votes on the department
+        council meetings and the curriculum committee, which have led to
+        tangible change within the program. We strive to maintain strong lines
+        of communications between the department staff and undergraduate
+        students. Located at ENG111, swing by at any time to speak in person, or{" "}
+        <LinkTextButton text=" contact us." link="/contact" />
+      </TextPage.Body>
+      <TextPage.Subheader>Events</TextPage.Subheader>
+      <TextPage.Body>
+        The CSCU holds regular academically related events, including academic
+        workshops and study sessions. We also collaborate with other student
+        groups and industry to hold career related events for students. We have
+        held many social events, pub nights, LAN nights and movie nights in the
+        past.
+      </TextPage.Body>
+      <TextPage.Subheader>Services</TextPage.Subheader>
+      <TextPage.Body>
+        We are currently moving our web services to AWS to allow for autonomy as
+        well as rapid development and deployment of web services for students.
+        We are currently working on an exam bank for students, and are currently
+        planning for others, possibly including game servers and other services.
+        Have an idea? <LinkTextButton text="Contact Us!" link="/contact" />
+      </TextPage.Body>
+      <TextPage.Subheader>Constitution</TextPage.Subheader>
+      <TextPage.Body>
+        The constitution can be found{" "}
+        <LinkTextButton
+          text="here."
+          link="https://docs.google.com/document/d/18v34XqiFI0hHousBXCB3GI_nznzIuKtnbCYfuSsHL-8/edit?usp=sharing"
+        />
       </TextPage.Body>
     </TextPage>
   );

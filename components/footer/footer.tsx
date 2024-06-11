@@ -23,7 +23,7 @@ const FooterIcon = ({
 
 const Footer = () => {
   return (
-    <div className="w-full bg-active flex justify-center items-center z-10">
+    <div className="w-full bg-active flex justify-center items-center z-10 mt-10">
       <FooterIcon link="https://linktr.ee/tmu_cscu">
         <LinkIcon fontSize="large" />
       </FooterIcon>

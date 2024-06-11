@@ -64,14 +64,137 @@ const Team = () => {
       {
         name: "Dylan Ha",
         position: "Fourth Year Rep",
-        email: "test@email.com",
+        email: "dylan.ha@torontomu.ca",
         imageUrl:
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
       {
         name: "Osanyem Osadebe",
         position: "Fourth Year Rep",
-        email: "test@email.com",
+        email: "oosadebe@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Rajab Rehan",
+        position: "Third Year Rep",
+        email: "rajab.rehan@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Muhammad Hanan",
+        position: "Second Year Rep",
+        email: "m1hanan@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Jason Truong",
+        position: "Systems Administrator",
+        email: "sysadmin@tmucscu.com",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+    ],
+    Marketing: [
+      {
+        name: "Vivian Fang",
+        position: "Marketing Director",
+        email: "marketing@tmucscu.com",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Mariam Felobes",
+        position: "TikTok Manager",
+        email: "mfelobes@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Aleena Ayub",
+        position: "Graphic Designer",
+        email: "aleena.ayub@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Julia Szubert",
+        position: "Photographer",
+        email: "julia.szubert@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Inaya Rajwani",
+        position: "Marketing Associate",
+        email: "inaya.rajwani@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Nehal Goel",
+        position: "Marketing Associate",
+        email: "nehal.goel@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+    ],
+    Deputies: [
+      {
+        name: "Jeffrey Ye",
+        position: "Deputy VP Operations",
+        email: "jeffrey.ye@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "TBD",
+        position: "Deputy VP Academics",
+        email: "TBD",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Stephen Tao",
+        position: "Deputy VP Student Life",
+        email: "s1tao@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Stewart Bustard",
+        position: "Deputy VP Finance",
+        email: "stewart.bustard@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Karson Chan",
+        position: "Deputy VP Communications",
+        email: "karson.chan@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "TBD",
+        position: "Deputy VP Careers & Co-op",
+        email: "TBD",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Jana Habibi",
+        position: "Deputy Third Year Rep",
+        email: "jana.habibi@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Amitoz Banga",
+        position: "Deputy Second Year Rep",
+        email: "amitoz.banga@torontomu.ca",
         imageUrl:
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
@@ -86,6 +209,10 @@ const Team = () => {
       <TeamSection members={team.Executives} />
       <h1 className="grid justify-center mb-10">Representatives</h1>
       <TeamSection members={team.Representatives} />
+      <h1 className="grid justify-center mb-10">Marketing Team</h1>
+      <TeamSection members={team.Marketing} />
+      <h1 className="grid justify-center mb-10">Deputies</h1>
+      <TeamSection members={team.Deputies} />
     </Page>
   );
 };

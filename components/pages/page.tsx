@@ -48,7 +48,9 @@ const Page = ({ children }: { children: ReactNode }) => {
           {children}
         </div>
         {showScrollElements ? <ScrollBackToTopButton /> : null}
-        <Footer />
+        <div className="dark:bg-dark">
+          <Footer />
+        </div>
       </div>
     </WidthContext.Provider>
   );

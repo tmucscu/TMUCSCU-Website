@@ -2,7 +2,7 @@ import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import { doesWindowExist } from "../../app/utils";
 const ScrollBackToTopButton = () => {
   return (
-    <div className="fixed rotate-180 opacity-90 right-10 bottom-24 text-active text-7xl dark:text-activeDark">
+    <div className="hidden md:flex fixed rotate-180 opacity-90 right-10 bottom-24 text-active text-7xl dark:text-activeDark">
       <button
         onClick={() => {
           if (doesWindowExist) {

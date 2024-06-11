@@ -1,3 +1,7 @@
+import WidthContext from "../../app/context/WidthContext";
+import clsx from "clsx";
+import { useContext } from "react";
+
 export type MemberType = {
   name: string;
   position: string;
@@ -6,9 +10,18 @@ export type MemberType = {
 };
 
 const TeamCard = ({ member }: { member: MemberType }) => {
+  const width = useContext(WidthContext);
+
+  const getTextWidth = () => {
+    if (!member.position.includes("Deputy") || width <= 1024) {
+      return "text-3xl";
+    }
+
+    return "text-xl xl:text-2xl";
+  };
   return (
     <div className="grid justify-items-center">
-      <h1 className="mb-4 text-3xl">
+      <h1 className={clsx("mb-4", getTextWidth())}>
         {member.position === "President" ? "" : member.position}
       </h1>
       <img

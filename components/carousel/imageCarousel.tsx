@@ -40,13 +40,13 @@ const ImageCarousel = ({ slidesToShow }: { slidesToShow: number }) => {
   }
 
   return (
-    <Slider className="overflow-hidden w-[600px]" {...settings}>
+    <Slider className="overflow-hidden w-[500px]" {...settings}>
       {carouselImages.map((imageId, index) => {
         return (
           <div key={imageId} className="flex justify-end align-center">
             <img
               className={clsx(
-                "w-[500px] rounded-3xl m-4",
+                "w-[350px] rounded-3xl m-4",
                 index % 2 !== 0 && "ml-24"
               )}
               src={`https://drive.google.com/thumbnail?id=${imageId}&sz=w1000`}
