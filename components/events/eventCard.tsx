@@ -6,7 +6,7 @@ import { EventType } from "../../app/events/page";
 import PrimaryRoundButton from "../button/primaryRoundButton";
 import SecondaryRoundButton from "../button/secondaryRoundButton";
 import TextButton from "../button/textButton";
-import WidthContext from "../../app/context/WidthContext";
+import { WidthContext } from "../../app/context/WidthContext.tsx";
 import clsx from "clsx";
 import { doesWindowExist } from "../../app/utils";
 import { formatDateAndLocation } from "./utils";
@@ -42,7 +42,7 @@ const EventCard = ({
     >
       <div className="2xl:col-span-7">
         <h2 className="font-bold">{event.name}</h2>
-        <p className="font-kulim">{formattedDateAndLocation}</p>
+        <p className="font-kulim tracking-normal">{formattedDateAndLocation}</p>
         <br />
 
         {showLargeImage ? (

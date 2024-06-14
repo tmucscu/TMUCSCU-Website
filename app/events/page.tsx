@@ -69,10 +69,14 @@ const Events = () => {
 
   return (
     <TextPage slidesToShow={5}>
-      <h1 className="pb-[21px]">Upcoming Events</h1>
+      <h1 className="pb-[21px]">Past Events</h1>
       {events.map((event, index) => {
         return (
-          <EventCard key={index} event={event} inverted={index % 2 !== 0} />
+          <EventCard
+            key={event.name}
+            event={event}
+            inverted={index % 2 !== 0}
+          />
         );
       })}
     </TextPage>

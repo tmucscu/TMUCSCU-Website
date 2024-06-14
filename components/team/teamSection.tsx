@@ -1,6 +1,6 @@
 import { MemberType } from "./teamCard";
 import TeamRow from "./teamRow";
-import WidthContext from "../../app/context/WidthContext";
+import { WidthContext } from "../../app/context/WidthContext.tsx";
 import { useContext } from "react";
 
 const TeamSection = ({ members }: { members: MemberType[] }) => {
@@ -20,7 +20,7 @@ const TeamSection = ({ members }: { members: MemberType[] }) => {
   return (
     <div>
       {memberRows.map((memberRow) => {
-        return <TeamRow members={memberRow} />;
+        return <TeamRow key={memberRow[0].name} members={memberRow} />;
       })}
     </div>
   );

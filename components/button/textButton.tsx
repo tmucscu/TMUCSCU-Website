@@ -3,7 +3,7 @@ import { ButtonType } from "./types";
 const TextButton = ({ text, onClick }: ButtonType) => {
   return (
     <button
-      className="text-active font-kulim font-semibold text-lg dark:text-activeDark"
+      className="text-active font-kulim font-semibold tracking-normal text-lg dark:text-activeDark"
       onClick={onClick}
     >
       {text}

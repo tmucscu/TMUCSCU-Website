@@ -3,7 +3,7 @@ import "../../styles/globals.css";
 import { RouteTypes, Routes } from "../constants";
 
 import Link from "next/link";
-import WidthContext from "../../app/context/WidthContext";
+import { WidthContext } from "../../app/context/WidthContext.tsx";
 import clsx from "clsx";
 import logo from "../../public/csculogo.png";
 import { useContext } from "react";

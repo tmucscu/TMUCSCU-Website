@@ -1,4 +1,4 @@
-import WidthContext from "../../app/context/WidthContext";
+import { WidthContext } from "../../app/context/WidthContext.tsx";
 import clsx from "clsx";
 import { useContext } from "react";
 

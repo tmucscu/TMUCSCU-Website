@@ -4,13 +4,13 @@
 
 @layer base {
     h1 {
-      @apply font-kulim text-[40px] font-bold dark:text-white;
+      @apply font-kulim text-[40px] font-bold dark:text-white tracking-normal;
     }
     h2 {
-        @apply font-kulim text-2xl dark:text-white;
+        @apply font-kulim text-2xl dark:text-white tracking-normal;
     }
     h3 {
-        @apply font-kulim text-lg xl:text-xl dark:text-white;
+        @apply font-kulim text-lg xl:text-xl dark:text-white tracking-normal;
     }
     p {
       @apply font-roboto text-base dark:text-white;

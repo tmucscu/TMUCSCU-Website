@@ -1,6 +1,7 @@
 import { Kulim_Park } from "next/font/google";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { WidthProvider } from "./context/WidthContext.tsx";
 
 export const metadata: Metadata = {
   title: "TMU CSCU",
@@ -39,7 +40,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div id="root">{children}</div>
+        <WidthProvider>
+          <div id="root">{children}</div>
+        </WidthProvider>
       </body>
     </html>
   );

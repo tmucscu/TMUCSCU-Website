@@ -3,7 +3,7 @@
 import { useContext, useEffect, useState } from "react";
 
 import Slider from "react-slick";
-import WidthContext from "../../app/context/WidthContext";
+import { WidthContext } from "../../app/context/WidthContext.tsx";
 import clsx from "clsx";
 import { getImageIdsForCarousel } from "./utils";
 

@@ -1,8 +1,10 @@
 "use client";
 
+import { ReactNode, useContext, useEffect, useRef, useState } from "react";
+
 import ImageCarousel from "../carousel/imageCarousel";
 import Page from "./page";
-import { ReactNode } from "react";
+import { WidthContext } from "../../app/context/WidthContext.tsx";
 
 const Header = ({ children }: { children: ReactNode }) => {
   return <h1 className="pb-[21px]">{children}</h1>;
@@ -17,16 +19,32 @@ const Body = ({ children }: { children: ReactNode }) => {
 };
 
 const TextPage = ({
-  slidesToShow,
   children,
 }: {
   children: ReactNode;
   slidesToShow: number;
 }) => {
+  const width = useContext(WidthContext);
+  const childrenContainerRef = useRef<HTMLDivElement>(null);
+  const [childrenHeight, setChildrenHeight] = useState(0);
+
+  // Gets height of left side ref to know how many images to render
+  useEffect(() => {
+    if (childrenContainerRef.current) {
+      setChildrenHeight(childrenContainerRef.current.clientHeight);
+    }
+  }, [children, width]);
+
+  const slidesToShow = Math.max(Math.floor(childrenHeight / 350), 1);
   return (
     <Page>
       <div className="grid grid-cols-5">
-        <div className="col-span-5 xl:col-span-3">{children}</div>
+        <div
+          ref={childrenContainerRef}
+          className="col-span-5 xl:col-span-3 h-fit"
+        >
+          {children}
+        </div>
         <div className="xl:col-span-2 flex justify-end">
           <ImageCarousel slidesToShow={slidesToShow} />
         </div>
