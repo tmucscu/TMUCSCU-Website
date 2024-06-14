@@ -13,7 +13,10 @@ const TeamCard = ({ member }: { member: MemberType }) => {
   const width = useContext(WidthContext);
 
   const getTextWidth = () => {
-    if (!member.position.includes("Deputy")) {
+    if (
+      !member.position.includes("Deputy") &&
+      member.position !== "Careers & Co-op Associate"
+    ) {
       return "text-3xl";
     }
     if (width <= 1024) {

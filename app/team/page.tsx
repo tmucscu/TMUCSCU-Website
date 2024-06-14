@@ -150,9 +150,9 @@ const Team = () => {
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
       {
-        name: "TBD",
+        name: "Hamidreza Khoramrokh",
         position: "Deputy VP Academics",
-        email: "TBD",
+        email: "hamidreza.khoramrokh@torontomu.ca",
         imageUrl:
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
@@ -178,9 +178,16 @@ const Team = () => {
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
       {
-        name: "TBD",
+        name: "Teodor Cirstoiu",
         position: "Deputy VP Careers & Co-op",
-        email: "TBD",
+        email: "tcirstoiu@torontomu.ca",
+        imageUrl:
+          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
+      },
+      {
+        name: "Faryal Siddiqui",
+        position: "Careers & Co-op Associate",
+        email: "faryal.siddiqui@torontomu.ca",
         imageUrl:
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
