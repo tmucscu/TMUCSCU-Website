@@ -8,4 +8,5 @@ export type ButtonType = {
   export type LinkTextButtonType = {
     text: string;
     link: string;
+    external?: boolean;
   };

@@ -1,11 +1,19 @@
-import Link from "next/link";
 import { LinkTextButtonType } from "./types";
 
-const LinkTextButton = ({ text, link }: LinkTextButtonType) => {
+const LinkTextButton = ({
+  text,
+  link,
+  external = false,
+}: LinkTextButtonType) => {
   return (
-    <Link className="underline text-active dark:text-activeDark" href={link}>
+    <a
+      className="underline text-active dark:text-activeDark"
+      target={external ? "_blank" : ""}
+      href={link}
+      rel="noopener noreferrer"
+    >
       {text}
-    </Link>
+    </a>
   );
 };
 

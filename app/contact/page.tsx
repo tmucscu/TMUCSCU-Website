@@ -25,6 +25,7 @@ const Contact = () => {
         <LinkTextButton
           text="this form"
           link="https://forms.gle/oyRn7vYipLMutxtU6"
+          external
         />{" "}
         to meet with one of our top-tier execs for any questions/such concerns
         you may want to address either in person or virtually.

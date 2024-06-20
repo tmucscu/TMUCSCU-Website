@@ -1,11 +1,17 @@
 "use client";
 
+// TODO: Needs a major clean up with navbar.tsx
+
+import {
+  ExternalNavbarLink,
+  NavbarTitles,
+  isExternalNavbarLink,
+} from "../navbar/navbar";
 import React, { useState } from "react";
 import { RouteTypes, Routes } from "../constants";
 
 import BurgerMenu from "./burgerMenu";
 import Link from "next/link";
-import { NavbarTitles } from "../navbar/navbar";
 import clsx from "clsx";
 import logo from "../../public/csculogo.png";
 import { usePathname } from "next/navigation";
@@ -13,19 +19,28 @@ import { usePathname } from "next/navigation";
 const MenuTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
   const pathname = usePathname();
 
+  const TitleComponent = (
+    <h3
+      className={clsx(
+        "hover:text-active dark:hover:text-activeDark",
+        Routes[routeKey] === pathname &&
+          "text-active font-bold dark:text-activeDark"
+      )}
+    >
+      {NavbarTitles[routeKey]}
+    </h3>
+  );
+
   return (
     <div className="my-1">
-      <Link href={Routes[routeKey]}>
-        <h3
-          className={clsx(
-            "hover:text-active dark:hover:text-activeDark",
-            Routes[routeKey] === pathname &&
-              "text-active font-bold dark:text-activeDark"
-          )}
-        >
-          {NavbarTitles[routeKey]}
-        </h3>
-      </Link>
+      {isExternalNavbarLink(routeKey) ? (
+        <ExternalNavbarLink href={Routes[routeKey]}>
+          {TitleComponent}
+        </ExternalNavbarLink>
+      ) : (
+        <Link href={Routes[routeKey]}>{TitleComponent}</Link>
+      )}
+      <Link href={Routes[routeKey]}></Link>
     </div>
   );
 };

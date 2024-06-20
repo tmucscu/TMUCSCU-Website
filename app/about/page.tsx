@@ -52,6 +52,7 @@ const About = () => {
         <LinkTextButton
           text="here."
           link="https://docs.google.com/document/d/18v34XqiFI0hHousBXCB3GI_nznzIuKtnbCYfuSsHL-8/edit?usp=sharing"
+          external
         />
       </TextPage.Body>
     </TextPage>

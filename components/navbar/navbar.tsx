@@ -1,12 +1,14 @@
+// TODO: Needs a major clean up
+
 import "../../styles/globals.css";
 
+import { ReactNode, useContext } from "react";
 import { RouteTypes, Routes } from "../constants";
 
 import Link from "next/link";
 import { WidthContext } from "../../app/context/WidthContext.tsx";
 import clsx from "clsx";
 import logo from "../../public/csculogo.png";
-import { useContext } from "react";
 import { usePathname } from "next/navigation";
 
 export const NavbarTitles = {
@@ -16,6 +18,24 @@ export const NavbarTitles = {
   MEETING_MINUTES: "MEETING MINUTES",
   CONTACT: "CONTACT",
   WIKI: "WIKI",
+};
+
+export const ExternalNavbarLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: ReactNode;
+}) => {
+  return (
+    <a target="_blank" href={href} rel="noopener noreferrer">
+      {children}
+    </a>
+  );
+};
+
+export const isExternalNavbarLink = (routeKey: string) => {
+  return routeKey === "MEETING_MINUTES" || routeKey === "WIKI";
 };
 
 const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
@@ -30,19 +50,27 @@ const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
 
   const pathname = usePathname();
 
+  const TitleComponent = (
+    <h3
+      className={clsx(
+        "hover:text-active dark:hover:text-activeDark",
+        Routes[routeKey] === pathname &&
+          "text-active font-bold dark:text-activeDark"
+      )}
+    >
+      {getNavbarTitle(routeKey)}
+    </h3>
+  );
+
   return (
     <div className="flex justify-center items-center ">
-      <Link href={Routes[routeKey]}>
-        <h3
-          className={clsx(
-            "hover:text-active dark:hover:text-activeDark",
-            Routes[routeKey] === pathname &&
-              "text-active font-bold dark:text-activeDark"
-          )}
-        >
-          {getNavbarTitle(routeKey)}
-        </h3>
-      </Link>
+      {isExternalNavbarLink(routeKey) ? (
+        <ExternalNavbarLink href={Routes[routeKey]}>
+          {TitleComponent}
+        </ExternalNavbarLink>
+      ) : (
+        <Link href={Routes[routeKey]}>{TitleComponent}</Link>
+      )}
     </div>
   );
 };
