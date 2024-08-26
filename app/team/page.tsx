@@ -39,7 +39,7 @@ const Team = () => {
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
       {
-        name: "Katrina Mei",
+        name: "Stewart Bustard",
         position: "VP Finance",
         email: "finance@tmucscu.com",
         imageUrl:
@@ -106,13 +106,6 @@ const Team = () => {
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
       {
-        name: "Mariam Felobes",
-        position: "TikTok Manager",
-        email: "mfelobes@torontomu.ca",
-        imageUrl:
-          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
-      },
-      {
         name: "Aleena Ayub",
         position: "Graphic Designer",
         email: "aleena.ayub@torontomu.ca",
@@ -160,13 +153,6 @@ const Team = () => {
         name: "Stephen Tao",
         position: "Deputy VP Student Life",
         email: "s1tao@torontomu.ca",
-        imageUrl:
-          "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
-      },
-      {
-        name: "Stewart Bustard",
-        position: "Deputy VP Finance",
-        email: "stewart.bustard@torontomu.ca",
         imageUrl:
           "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg",
       },
