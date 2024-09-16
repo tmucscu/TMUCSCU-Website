@@ -66,17 +66,19 @@ const EventCard = ({
           />
         </div>
 
-        <div className="mt-12">
-          <RoundButton
-            text={"Sign Up"}
-            onClick={() => {
-              if (doesWindowExist) {
-                const win = window.open(event.signUpLink, "_blank");
-                win?.focus();
-              }
-            }}
-          />
-        </div>
+        {event.signUpLink ? (
+          <div className="mt-12">
+            <RoundButton
+              text={"Sign Up"}
+              onClick={() => {
+                if (doesWindowExist) {
+                  const win = window.open(event.signUpLink, "_blank");
+                  win?.focus();
+                }
+              }}
+            />
+          </div>
+        ) : null}
       </div>
 
       {!showLargeImage ? (
