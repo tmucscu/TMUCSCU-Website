@@ -17,23 +17,34 @@ export type EventType = {
   signUpLink?: string;
 };
 
+type EventsType = {
+  upcoming: EventType[];
+  past: EventType[];
+};
 const Events = () => {
-  const events = eventData;
+  const events: EventsType = eventData;
 
+  const hasUpcomingEvents = events.upcoming.length > 0;
   return (
     <TextPage slidesToShow={5}>
-      <h1 className="pb-[21px]">Upcoming Events</h1>
-      {events.upcoming.map((event, index) => {
-        return (
-          <EventCard
-            key={event.name}
-            event={event}
-            inverted={index % 2 !== 0}
-          />
-        );
-      })}
+      {hasUpcomingEvents ? (
+        <div>
+          <h1 className="pb-[21px]">Upcoming Events</h1>
+          {events.upcoming.map((event, index) => {
+            return (
+              <EventCard
+                key={event.name}
+                event={event}
+                inverted={index % 2 !== 0}
+              />
+            );
+          })}
+        </div>
+      ) : null}
       <h1 className="pb-[21px]">Past Events</h1>
       {events.past.map((event, index) => {
+        delete event.signUpLink;
+
         return (
           <EventCard
             key={event.name}
