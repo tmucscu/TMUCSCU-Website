@@ -27,13 +27,13 @@
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     },
     {
-      "name": "Stewart Bustard",
+      "name": "Sofia Pham",
       "position": "VP Finance",
       "email": "finance@tmucscu.com",
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     },
     {
-      "name": "Sofia Pham",
+      "name": "Karson Chan",
       "position": "VP Communications",
       "email": "communications@tmucscu.com",
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
@@ -68,6 +68,12 @@
       "name": "Muhammad Hanan",
       "position": "Second Year Rep",
       "email": "m1hanan@torontomu.ca",
+      "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
+    },
+    {
+      "name": "Rayan Roshan",
+      "position": "First Year Rep",
+      "email": "rayan.roshan@torontomu.ca",
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     },
     {
@@ -129,21 +135,15 @@
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     },
     {
-      "name": "Karson Chan",
-      "position": "Deputy VP Communications",
-      "email": "karson.chan@torontomu.ca",
+      "name": "Ryan Pham",
+      "position": "Deputy VP Finance",
+      "email": "r1pham@torontomu.ca",
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     },
     {
       "name": "Teodor Cirstoiu",
       "position": "Deputy VP Careers & Co-op",
       "email": "tcirstoiu@torontomu.ca",
-      "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
-    },
-    {
-      "name": "Faryal Siddiqui",
-      "position": "Careers & Co-op Associate",
-      "email": "faryal.siddiqui@torontomu.ca",
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     },
     {
@@ -156,6 +156,32 @@
       "name": "Amitoz Banga",
       "position": "Deputy Second Year Rep",
       "email": "amitoz.banga@torontomu.ca",
+      "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
+    },
+    {
+      "name": "Fatima Rehan",
+      "position": "Deputy First Year Rep",
+      "email": "f1rehan@torontomu.ca",
+      "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
+    }
+  ],
+  "Associates": [
+    {
+      "name": "Ian Macwan",
+      "position": "Academics Associate",
+      "email": "ian.macwan@torontomu.ca",
+      "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
+    },
+    {
+      "name": "Belal Armanazi",
+      "position": "Student Life Associate",
+      "email": "belal.armanazi@torontomu.ca",
+      "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
+    },
+    {
+      "name": "Faryal Siddiqui",
+      "position": "Careers & Co-op Associate",
+      "email": "faryal.siddiqui@torontomu.ca",
       "imageUrl": "https://www.fluidsecure.com/wp-content/uploads/2023/02/Blank-Headshot.jpg"
     }
   ]
