@@ -18,12 +18,7 @@ const Body = ({ children }: { children: ReactNode }) => {
   return <p className="pb-[21px]">{children}</p>;
 };
 
-const TextPage = ({
-  children,
-}: {
-  children: ReactNode;
-  slidesToShow: number;
-}) => {
+const TextPage = ({ children }: { children: ReactNode }) => {
   const width = useContext(WidthContext);
   const childrenContainerRef = useRef<HTMLDivElement>(null);
   const [childrenHeight, setChildrenHeight] = useState(0);

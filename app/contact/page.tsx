@@ -7,7 +7,7 @@ import TextPage from "../../components/pages/textPage";
 
 const Contact = () => {
   return (
-    <TextPage slidesToShow={1}>
+    <TextPage>
       <TextPage.Header>Get in touch.</TextPage.Header>
       <TextPage.Body>
         The official medium of communication with the CSCU is via email. All
