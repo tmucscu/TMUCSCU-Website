@@ -21,6 +21,8 @@ const Team = () => {
       <TeamSection members={team.Marketing} />
       <h1 className="grid justify-center mb-10">Deputies</h1>
       <TeamSection members={team.Deputies} />
+      <h1 className="grid justify-center mb-10">Associates</h1>
+      <TeamSection members={team.Associates} />
     </Page>
   );
 };
