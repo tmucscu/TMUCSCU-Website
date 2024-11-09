@@ -3,11 +3,15 @@
 import "../../styles/globals.css";
 
 import LinkTextButton from "../../components/button/linkTextButton";
+import SponsorGallery from "../../components/sponsors/sponsorGallery";
 import TextPage from "../../components/pages/textPage";
+import sponsorData from "./sponsors.json";
 
 const About = () => {
+  const sponsors = sponsorData;
+
   return (
-    <TextPage slidesToShow={2}>
+    <TextPage>
       <TextPage.Header>About Us</TextPage.Header>
       <TextPage.Body>
         The CSCU is the Undergraduate Computer Science Course Union at Toronto
@@ -54,6 +58,26 @@ const About = () => {
           link="https://docs.google.com/document/d/18v34XqiFI0hHousBXCB3GI_nznzIuKtnbCYfuSsHL-8/edit?usp=sharing"
           external
         />
+      </TextPage.Body>
+      <br />
+      <br />
+      <TextPage.Header>Our Sponsors</TextPage.Header>
+      <TextPage.Body>
+        The CSCU deeply appreciates the invaluable support our sponsors provide.
+        If you're interested in partnering with us to enhance the quality of
+        events for TMU Computer Science students while expanding your outreach,
+        we’d love to <LinkTextButton text="hear from you!" link="/contact" />
+        <br />
+        <br />
+        <TextPage.Subheader>2024-2025 Sponsors</TextPage.Subheader>
+        <TextPage.Body>
+          <SponsorGallery images={sponsors.yearly} />
+        </TextPage.Body>
+        <br />
+        <TextPage.Subheader>Past Sponsors</TextPage.Subheader>
+        <TextPage.Body>
+          <SponsorGallery images={sponsors.past} />
+        </TextPage.Body>
       </TextPage.Body>
     </TextPage>
   );
