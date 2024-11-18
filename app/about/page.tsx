@@ -31,8 +31,8 @@ const About = () => {
         council meetings and the curriculum committee, which have led to
         tangible change within the program. We strive to maintain strong lines
         of communications between the department staff and undergraduate
-        students. Located at ENG111, swing by at any time to speak in person, or{" "}
-        <LinkTextButton text=" contact us." link="/contact" />
+        students. Located at EPH 442-D, swing by at any time to speak in person,
+        or <LinkTextButton text=" contact us." link="/contact" />
       </TextPage.Body>
       <TextPage.Subheader>Events</TextPage.Subheader>
       <TextPage.Body>

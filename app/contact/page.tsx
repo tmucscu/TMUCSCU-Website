@@ -32,12 +32,12 @@ const Contact = () => {
       </TextPage.Body>
       <TextPage.Subheader>Our Office</TextPage.Subheader>
       <TextPage.Body>
-        You can find us at our office in ENG. We'll often do pick ups and office
-        hours in here.
+        You can find us at our office on the 4th floor of Eric Palin Hall. We'll
+        often do pick ups and office hours in here.
         <br />
         <br />
-        245 Church St Toronto, ON, M5B 1Z4 Canada <br />
-        Room: ENG 111
+        87 Gerrard St E, Toronto, ON M5B 2M2 <br />
+        Room: EPH 442-D
       </TextPage.Body>
     </TextPage>
   );
