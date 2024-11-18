@@ -1,6 +1,17 @@
 {
   "upcoming": [
     {
+      "name": "Boba & Board Games",
+      "date": "November 21, 2024",
+      "startTime": "4:30PM",
+      "endTime": "6:30PM",
+      "location": "KHE 223",
+      "imageUrl": "1xfi7O2hybULEucFwCwvdSvzuhuA5tdCq",
+      "details": "🍕🎉🧋CSCU x USSTM Boba and Board Games Event 🧋🎉🍕\n\nTake a break from studying and join us for Free Bubble Tea from Coco and Pizza from Pizza Pizza on Thurs, Nov 21, from 4:30 PM to 6:30 PM at the Sci Lounge (KHE223)! Enjoy board games, refreshments, and a chance to unwind with friends.\n\n🎁 Participate in our raffle and a secret game for a chance to win: wooden chess set, catan, cards against humanity, exploding kittens, and a boba themed gift bundle\n\n🚨 Limit: 1 drink per person, first come first serve (no sign up required)"
+    }
+  ],
+  "past": [
+    {
       "name": "Pathways to Data Science",
       "date": "November 14, 2024",
       "startTime": "6PM",
@@ -9,15 +20,13 @@
       "imageUrl": "1eBlSCPNeDSZegfEDT6d5mrNYhHipXbyo",
       "signUpLink": "https://gdg.community.dev/events/details/google-gdg-on-campus-toronto-metropolitan-university-toronto-canada-presents-pathways-to-data-science-breaking-into-the-industry/",
       "details": "Curious about Data Science? 🤔\n\nJoin us for an Introduction to Data Science event! Dive into a hands-on workshop showcasing real-world data science applications and engage in a lively panel discussion with industry experts. Don’t miss this chance to learn, connect, and get inspired to launch your data science journey! 💻🌟\n\n🔗 Get your tickets now!"
-    }
-  ],
-  "past": [
+    },
     {
       "name": "CSCU Resume Roast",
       "date": "October 30, 2024",
       "startTime": "6PM",
       "endTime": "8PM",
-      "location": "KHE321-A",
+      "location": "KHE 321-A",
       "imageUrl": "1FPEq8R0jBXst3EpoX9dVNrC0BJ0huVhN",
       "details": "🔥 CSCU Resume Roast 🔥\n\nJoin us on Wed, October 30th from 6 - 8 PM at KHE321-A (Kerr Hall East) for our Resume Roast, sponsored by Dayforce!\n\nPrepare for hiring season. Get expert tips from REAL RECRUITERS from DAYFORCE and THESCORE as they review resumes live and share what makes a standout application. 📄💼 Plus, there will be free food and drinks!\n\n🌟 Submit your resume in the link in our bio for a chance to be critiqued live by industry pros (with your info blurred for privacy)! Even if your resume isn’t selected, you’ll still get a chance for 1:1 feedback and network with Dayforce and theScore.\n\n🎁 Prizes: Submitting a resume enters you into a giveaway for a portable power bank or Smiski figurines! There will also be theScore and Dayforce swag at the event.\n\nSign up and submit your resume using the link in our bio."
     },
