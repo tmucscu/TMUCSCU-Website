@@ -11,7 +11,7 @@ export type Carousel = {
   images: string[];
   ttl: string;
 };
-const ImageCarousel = ({ slidesToShow }: { slidesToShow: number }) => {
+const ImageCarousel = ({ numSlides }: { numSlides: number }) => {
   const width = useContext(WidthContext);
   const isLargeScreen = width >= 1280;
   const [carouselImages, setCarouselImages] = useState<string[]>([]);
@@ -21,6 +21,8 @@ const ImageCarousel = ({ slidesToShow }: { slidesToShow: number }) => {
       setCarouselImages(imageIds);
     });
   }, []);
+
+  const slidesToShow = Math.min(numSlides, carouselImages.length);
 
   const settings = {
     infinite: true,
