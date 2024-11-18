@@ -30,7 +30,7 @@ const TextPage = ({ children }: { children: ReactNode }) => {
     }
   }, [children, width]);
 
-  const slidesToShow = Math.max(Math.floor(childrenHeight / 350), 1);
+  const numSlides = Math.max(Math.floor(childrenHeight / 350), 1);
   return (
     <Page>
       <div className="grid grid-cols-5">
@@ -41,7 +41,7 @@ const TextPage = ({ children }: { children: ReactNode }) => {
           {children}
         </div>
         <div className="xl:col-span-2 flex justify-end">
-          <ImageCarousel slidesToShow={slidesToShow} />
+          <ImageCarousel numSlides={numSlides} />
         </div>
       </div>
     </Page>
