@@ -1,6 +1,17 @@
 {
   "upcoming": [
     {
+      "name": "CPS109 Study Cafe",
+      "date": "November 28, 2024",
+      "startTime": "5:30PM",
+      "endTime": "7:30PM",
+      "location": "KHE 223",
+      "imageUrl": "1FViWGss_o5HqKvQaemvfd7K_SsJmsB3A",
+      "details": "Need help with CPS 109? We’ve got you covered! 💻\n\nJoin us for a CPS 109 study session where we’ll dive into practice questions, review key concepts, and answer any questions you have. Don’t forget to bring your laptop if you can!\n\n📅 Date: Thurs, Nov 28 @ 5:30-7:30 PM\n📍 Science Lounge (KHE223)\n🧃 Refreshments will be provided!\n\nLet’s ace this exam together, see you there! 👩‍💻👨‍💻\n\nNo signups required."
+    }
+  ],
+  "past": [
+    {
       "name": "Boba & Board Games",
       "date": "November 21, 2024",
       "startTime": "4:30PM",
@@ -8,9 +19,7 @@
       "location": "KHE 223",
       "imageUrl": "1xfi7O2hybULEucFwCwvdSvzuhuA5tdCq",
       "details": "🍕🎉🧋CSCU x USSTM Boba and Board Games Event 🧋🎉🍕\n\nTake a break from studying and join us for Free Bubble Tea from Coco and Pizza from Pizza Pizza on Thurs, Nov 21, from 4:30 PM to 6:30 PM at the Sci Lounge (KHE223)! Enjoy board games, refreshments, and a chance to unwind with friends.\n\n🎁 Participate in our raffle and a secret game for a chance to win: wooden chess set, catan, cards against humanity, exploding kittens, and a boba themed gift bundle\n\n🚨 Limit: 1 drink per person, first come first serve (no sign up required)"
-    }
-  ],
-  "past": [
+    },
     {
       "name": "Pathways to Data Science",
       "date": "November 14, 2024",
