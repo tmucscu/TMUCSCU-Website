@@ -48,7 +48,7 @@ const EventCard = ({
         {showLargeImage ? (
           <img
             className=" rounded-2xl h-64 2xl:hidden mb-6"
-            src={`https://drive.google.com/thumbnail?id=${event.imageUrl}&sz=w1000`}
+            src={`https://drive.google.com/thumbnail?id=${event.imageId}&sz=w1000`}
             alt="Event Image"
           />
         ) : null}
@@ -85,7 +85,7 @@ const EventCard = ({
         <div className="flex justify-center 2xl:col-span-3 aspect-square">
           <img
             className=" rounded-2xl hidden 2xl:block"
-            src={`https://drive.google.com/thumbnail?id=${event.imageUrl}&sz=w1000`}
+            src={`https://drive.google.com/thumbnail?id=${event.imageId}&sz=w1000`}
             alt="Event Image"
           />
         </div>
