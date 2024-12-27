@@ -1,23 +1,22 @@
 {
-  "upcoming": [
+  "upcoming": [],
+  "past": [
     {
       "name": "CPS109 Study Cafe",
       "date": "November 28, 2024",
       "startTime": "5:30PM",
       "endTime": "7:30PM",
       "location": "KHE 223",
-      "imageUrl": "1FViWGss_o5HqKvQaemvfd7K_SsJmsB3A",
+      "imageId": "1FViWGss_o5HqKvQaemvfd7K_SsJmsB3A",
       "details": "Need help with CPS 109? We’ve got you covered! 💻\n\nJoin us for a CPS 109 study session where we’ll dive into practice questions, review key concepts, and answer any questions you have. Don’t forget to bring your laptop if you can!\n\n📅 Date: Thurs, Nov 28 @ 5:30-7:30 PM\n📍 Science Lounge (KHE223)\n🧃 Refreshments will be provided!\n\nLet’s ace this exam together, see you there! 👩‍💻👨‍💻\n\nNo signups required."
-    }
-  ],
-  "past": [
+    },
     {
       "name": "Boba & Board Games",
       "date": "November 21, 2024",
       "startTime": "4:30PM",
       "endTime": "6:30PM",
       "location": "KHE 223",
-      "imageUrl": "1xfi7O2hybULEucFwCwvdSvzuhuA5tdCq",
+      "imageId": "1xfi7O2hybULEucFwCwvdSvzuhuA5tdCq",
       "details": "🍕🎉🧋CSCU x USSTM Boba and Board Games Event 🧋🎉🍕\n\nTake a break from studying and join us for Free Bubble Tea from Coco and Pizza from Pizza Pizza on Thurs, Nov 21, from 4:30 PM to 6:30 PM at the Sci Lounge (KHE223)! Enjoy board games, refreshments, and a chance to unwind with friends.\n\n🎁 Participate in our raffle and a secret game for a chance to win: wooden chess set, catan, cards against humanity, exploding kittens, and a boba themed gift bundle\n\n🚨 Limit: 1 drink per person, first come first serve (no sign up required)"
     },
     {
@@ -26,7 +25,7 @@
       "startTime": "6PM",
       "endTime": "8:30PM",
       "location": "DCC 103/104",
-      "imageUrl": "1eBlSCPNeDSZegfEDT6d5mrNYhHipXbyo",
+      "imageId": "1eBlSCPNeDSZegfEDT6d5mrNYhHipXbyo",
       "signUpLink": "https://gdg.community.dev/events/details/google-gdg-on-campus-toronto-metropolitan-university-toronto-canada-presents-pathways-to-data-science-breaking-into-the-industry/",
       "details": "Curious about Data Science? 🤔\n\nJoin us for an Introduction to Data Science event! Dive into a hands-on workshop showcasing real-world data science applications and engage in a lively panel discussion with industry experts. Don’t miss this chance to learn, connect, and get inspired to launch your data science journey! 💻🌟\n\n🔗 Get your tickets now!"
     },
@@ -36,7 +35,7 @@
       "startTime": "6PM",
       "endTime": "8PM",
       "location": "KHE 321-A",
-      "imageUrl": "1FPEq8R0jBXst3EpoX9dVNrC0BJ0huVhN",
+      "imageId": "1FPEq8R0jBXst3EpoX9dVNrC0BJ0huVhN",
       "details": "🔥 CSCU Resume Roast 🔥\n\nJoin us on Wed, October 30th from 6 - 8 PM at KHE321-A (Kerr Hall East) for our Resume Roast, sponsored by Dayforce!\n\nPrepare for hiring season. Get expert tips from REAL RECRUITERS from DAYFORCE and THESCORE as they review resumes live and share what makes a standout application. 📄💼 Plus, there will be free food and drinks!\n\n🌟 Submit your resume in the link in our bio for a chance to be critiqued live by industry pros (with your info blurred for privacy)! Even if your resume isn’t selected, you’ll still get a chance for 1:1 feedback and network with Dayforce and theScore.\n\n🎁 Prizes: Submitting a resume enters you into a giveaway for a portable power bank or Smiski figurines! There will also be theScore and Dayforce swag at the event.\n\nSign up and submit your resume using the link in our bio."
     },
     {
@@ -44,7 +43,7 @@
       "date": "October 9, 2024",
       "startTime": "6PM",
       "endTime": "8PM",
-      "imageUrl": "1_GBBVpSp286ST2JoR1Eucu3jkEeYqInF",
+      "imageId": "1_GBBVpSp286ST2JoR1Eucu3jkEeYqInF",
       "details": "🎙️ Introducing our Fall Semester Podcast! 🍂✨\n\nJoin us on Wed, Oct 9 from 6 - 8 PM for our annual podcast. It’s the perfect chance to meet the team, learn more about our initiatives, and discuss anything on your mind (co-op, school, and more). 💭\n\n🔹 Special Guest: Dr. Dave Mason, Chair of the CS Department, will join us for an exclusive AMA segment! Got burning questions? This is your time to ask!\n\n💻 We’ll be streaming live on Twitch, playing games, and hanging out.\n\n🎁 Giveaway prizes worth $120 up for grabs!\n\n📍 Twitch.tv/TMU_CSCU"
     },
     {
@@ -52,14 +51,14 @@
       "date": "October 4, 2024",
       "startTime": "9PM",
       "endTime": "1AM",
-      "imageUrl": "1wtEQlIzPTOYxKZzCc2mbeIQ5I0tsZnQi",
+      "imageId": "1wtEQlIzPTOYxKZzCc2mbeIQ5I0tsZnQi",
       "details": "🍾🪩 CSCU Bar Night 🪩​🍾\n\nIts that time of the year again! Join us at The Met and start off the fall semester right 🎉 From 9PM - 1AM there will be a DJ ( @razzaknooraniofficial ) playing your favourite tunes and neon accessories to light up your outfit!\n\n‼️One Card and ID required for entry. All ages and programs are allowed in. Alcoholic beverages are available for purchase with a valid form of ID. Each attendee may bring up to ONE non-TMU student\n\nNo sign up required. Can’t wait to see you there!"
     },
     {
       "name": "CSCU First Year Rep Hiring",
       "date": "September 20, 2024",
       "endTime": "11:59PM",
-      "imageUrl": "10D2ZwEop3KLLX3LJJWaoHUhdotzq_yQy",
+      "imageId": "10D2ZwEop3KLLX3LJJWaoHUhdotzq_yQy",
       "signUpLink": "https://docs.google.com/forms/d/e/1FAIpQLSe4BUn-d5_vg4Uz4kzin7LqOKYPW1hSlFWs46LvLeodJ9dcVw/viewform",
       "details": "We have opened our First-Year Rep applications for the 2024-2025 team\n\nThe Toronto Metropolitan Computer Science Course Union (CSCU) is looking for 2 (possibly more 👀) qualified candidates to represent and be the voice of the First-Year students.\n\nThe CSCU primarily represents Computer Science students in the department. In addition, we organize a variety of academic, career, and social events to assist students 📚. By joining the CSCU, you will expand your network within and outside of TMU. Many of our members have gained positions at companies such as Amazon, Google, Shopify, Tesla, Coursera, and more as a result. Apply to the CSCU and help us transform TMU CS into a student-driven department 💪!\n\nDEADLINE 🚨: Sept 20th 11:59 PM\n\nLink to the application is in our bio! 📋"
     },
@@ -69,7 +68,7 @@
       "startTime": "6:30PM",
       "endTime": "8:30PM",
       "location": "POD 250",
-      "imageUrl": "1dcwyrlRckODX2jq5-4Fy6Kw8ug0zAiLW",
+      "imageId": "1dcwyrlRckODX2jq5-4Fy6Kw8ug0zAiLW",
       "signUpLink": "https://lu.ma/bi239hrz",
       "details": "🚀 Equip yourself for success with the CSCU x GDSC’s first event of the year! 🔥\n\nJoin us for a Programming Essentials Workshop, where you’ll get a solid introduction and hands-on experience to essential tools like:\n\n👩‍💻 Visual Studio Code\n🧑‍💻 Git/GitHub\n👩‍💻 Command Line\n\n🌟 Whether you’re a beginner or just need a refresher, this workshop is designed to set you up with the tools needed for your academic journey and career. Don’t miss out—let’s start the year strong together‼️\n\n🗓️ Monday, Sep 16\n⏰  6:30 pm - 8:30 pm\n📍 POD 250\n\n‼️ RSVP now through the link in our bio ⏰\n\n🧃 Refreshments will be provided!"
     },
@@ -79,14 +78,14 @@
       "startTime": "1:15PM",
       "endTime": "4:15PM",
       "location": "Twilight Cafe",
-      "imageUrl": "1VBh97s2aPNGcg8i1eYC8Big5wa3SXzlq",
+      "imageId": "1VBh97s2aPNGcg8i1eYC8Big5wa3SXzlq",
       "details": "🎲 Hey CS froshies!\n\nJoin us at Twilight Cafe for a board game event exclusively for FIRST YEAR CS students. Enjoy a fun day of games, laughter, and new friendships. All with free admission! Don’t miss this chance to make new friends and connect with the CS community. See you there!\n\n❗️CS FIRST YEAR STUDENTS ONLY\n\nSign up using the link in our bio"
     },
     {
       "name": "Graphic Designer Application",
       "date": "May 27, 2024",
       "endTime": "9PM",
-      "imageUrl": "1FqKN99CfszlI-jpDGCDPKCd_nfT6F7QI",
+      "imageId": "1FqKN99CfszlI-jpDGCDPKCd_nfT6F7QI",
       "details": "📣 APPLICATIONS EXTENDED\n\nTMU CSCU ARE LOOKING TO HIRE THESE POSITIONS FOR THE UPCOMING 2024-2025 ACADEMIC YEAR:\n\t- Graphic Designer (OPEN TO ALL PROGRAMS)\n\t- Deputy VP Academics (CS ONLY)\n\nFind out more about each position using the links in our bio.\n\nThe CSCU primarily represents Computer Science students in the department. In addition, we organize a variety of academic, career, and social events to assist students 📚. By joining the CSCU, you will expand your network within and outside of TMU. Many of our members have gained positions at companies such as Amazon, Google, Shopify, Tesla, Coursera, and more as a result. Apply to the CSCU and help us transform TMU CS into a student-driven department 💪!\n\nDEADLINE: May 27, 2024"
     },
     {
@@ -95,7 +94,7 @@
       "startTime": "9PM",
       "endTime": "1AM",
       "location": "The Met",
-      "imageUrl": "17vdpzYTD0ZvV1WQnjQC8O4RnoP1shzxa",
+      "imageId": "17vdpzYTD0ZvV1WQnjQC8O4RnoP1shzxa",
       "details": "🍾🪩 CSCU Bar Night is coming to you NEXT WEEK!\n\nJoin us at our campus bar, The Met, to end the academic year off with a bang 💪 From 9PM - 1AM there will be a DJ ( @razzaknooraniofficial ) blasting music and tons of neon props to keep the night alive and fun 🪩\n\nOne Card and ID required for entry‼️ Each attendee may bring up to ONE non TMU student\n\nCan’t wait to see you all there 🎉"
     },
     {
@@ -104,7 +103,7 @@
       "startTime": "6:30PM",
       "endTime": "8:30PM",
       "location": "DCC 204",
-      "imageUrl": "1EWuw562LTxpQEplXlDEHCCjMPw1KxhvK",
+      "imageId": "1EWuw562LTxpQEplXlDEHCCjMPw1KxhvK",
       "details": "📢 TMACC and CSCU are hosting a Fundamental Algorithms Workshop on Thursday, April 4th from 6:30PM - 8:30PM in DCC 204.\n\n💻 Come by to learn, review, and practice fundamental algorithms applicable to CPS 616, CPS 420, and technical interviews. Everyone is welcome as this workshop is suitable for all skill levels! Feel free to bring your friends and collaborate. At the end there will be time to socialize and play Towers of Hanoi 🗼 Win ducks and an arduino set! 🏆\n\n🌯 Free food (not pizza!) and drinks will be provided. Sign up is required with the link in our bio 📝 See you there!"
     },
     {
@@ -113,7 +112,7 @@
       "startTime": "6:30PM",
       "endTime": "8:30PM",
       "location": "DCC 204",
-      "imageUrl": "1DnBFjVv40YyGGMwMKz-pxYja7wlna8_a",
+      "imageId": "1DnBFjVv40YyGGMwMKz-pxYja7wlna8_a",
       "details": "🚨 Gamers and keyboard lovers, we’re excited to announce the return of the TMUGG x CSCU keyboard event sponsored by Ashkeebs ⌨️ ! Join us at DCC204 on March 28 from 6:30-8:30PM for a typeracing contest and keyboard showcase ⏰\n\nAre you a fast typer? Do you have a lovely keyboard to show off? 🤨 Come prove it and win tons of prizes - including 4 keyboards, 3 desk mats, and more (that’s over $800) 🤑🤑! Even if you don’t, still be sure to sign up to meet new people, inspire your next board, and win the winner predictions portion of our event 🥳\n\nFree snacks and drinks will be provided🧃. Sign up is required with the link in our bio 📝. We can’t wait to see you all there ‼️\n\nNote: We strongly advise racers to bring their keyboards, even if they will not present them in the showcase"
     }
   ]

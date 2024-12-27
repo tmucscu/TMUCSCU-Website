@@ -12,7 +12,7 @@ export type EventType = {
   startTime?: string;
   endTime: string;
   location?: string;
-  imageUrl: string;
+  imageId: string;
   details: string;
   signUpLink?: string;
 };
