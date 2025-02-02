@@ -1,6 +1,26 @@
 {
-  "upcoming": [],
+  "upcoming": [
+    {
+      "name": "Interview 101",
+      "date": "February 6, 2025",
+      "startTime": "6PM",
+      "endTime": "8PM",
+      "location": "ENG-LG 11",
+      "imageId": "1tdosdJvPKxhC4S-F60QM3wd2USqvCoUg",
+      "signUpLink": "https://lu.ma/kbfunei2",
+      "details": "💼 Interview 101 💼\n\nLooking to ace your next interview? Join us for Interview 101, sponsored by Dayforce, where REAL industry professionals will break down the behavioral skills you need to succeed! 📋✨\n\n📅 Date: Thursday, Feb 6\n📍 Location: ENG-LG11\n⏰ Time: 6:00 PM - 8:00 PM\n\n🔹 Learn insider tips & tricks for behavioral interviews\n🔹 Hear directly from recruiters & industry professionals\n🔹 Get your questions answered in our Q&A session\n🔹 Enjoy free food & networking opportunities! 🍕\n\nSign-up is required!"
+    }
+  ],
   "past": [
+    {
+      "name": "Ace the Technical Interview",
+      "date": "January 30, 2025",
+      "startTime": "6PM",
+      "endTime": "8:30PM",
+      "location": "ENG-LG 14",
+      "imageId": "1ELC_e9saDwaGOnNavn4i8b4K2RAh6uUE",
+      "details": "Need help sharpening your technical skills to land your next internship?\n\nJoin CSCU and TMACC for an Ace the Technical Interview Workshop, sponsored by Dayforce, on Thursday, January 30th, from 6 to 8:30 PM in ENG-LG14!\n\nThis engaging workshop, led by engineering managers, is suitable for all skill levels—whether you’re preparing for technical interviews, looking to improve your skills, or just want some practice.\n\n✨ What to expect:\n• Opportunities to connect with Dayforce recruiters\n• Chances to earn ducks 🦆\n• Dinner catered by Firefly Burger 🍔\n\nSign-up is required! We can’t wait to see you there!"
+    },
     {
       "name": "CPS109 Study Cafe",
       "date": "November 28, 2024",
