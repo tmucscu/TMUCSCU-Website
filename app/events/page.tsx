@@ -2,6 +2,7 @@
 
 import "../../styles/globals.css";
 
+import { ClipLoader } from "react-spinners";
 import EventCard from "../../components/events/eventCard";
 import TextPage from "../../components/pages/textPage";
 import { getEvents } from "../../components/events/utils";
@@ -33,11 +34,23 @@ const Events = () => {
     queryFn: getEvents,
   });
 
-  if (isLoading) return;
-
-  if (error) return <p>Error: {error.message}</p>;
-
-  if (!events) return <p>Please try again.</p>;
+  if (isLoading || error || !events) {
+    return (
+      <TextPage>
+        {isLoading && (
+          <ClipLoader
+            size={50}
+            color={"#095790"}
+            speedMultiplier={0.5}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        )}
+        {error && <p>Error: {error.message}</p>}
+        {!isLoading && !events && <p>Please try again.</p>}
+      </TextPage>
+    );
+  }
 
   const hasUpcomingEvents = events.upcoming.length > 0;
 
