@@ -2,9 +2,11 @@
 
 import "../../styles/globals.css";
 
+import { useMemo, useState } from "react";
+
 import EventCard from "../../components/events/eventCard";
 import TextPage from "../../components/pages/textPage";
-import eventData from "./events.json";
+import { getEvents } from "../../components/events/utils";
 
 export type EventType = {
   name: string;
@@ -17,14 +19,22 @@ export type EventType = {
   signUpLink?: string;
 };
 
-type EventsType = {
+export type EventsType = {
   upcoming: EventType[];
   past: EventType[];
 };
+
 const Events = () => {
-  const events: EventsType = eventData;
+  const [events, setEvents] = useState<EventsType>({ upcoming: [], past: [] });
+
+  useMemo(() => {
+    getEvents().then((events: EventsType) => {
+      setEvents(events);
+    });
+  }, []);
 
   const hasUpcomingEvents = events.upcoming.length > 0;
+
   return (
     <TextPage>
       {hasUpcomingEvents ? (
