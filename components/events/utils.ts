@@ -52,7 +52,7 @@ const formatEvents = (events: string[][]) : EventsType => {
 
 const datePassed = (date: string, endTime: string) => {
     const dateStr = date + " " + endTime
-    const formattedStr = dateStr.replace(/(\d+):?(\d+)?(AM|PM)/i, (match, hour, minutes = "00", meridian) => {
+    const formattedStr = dateStr.replace(/(\d+):?(\d+)?(AM|PM)/i, (_match, hour, minutes = "00", meridian) => {
         let h = parseInt(hour, 10);
         if (meridian.toUpperCase() === 'PM' && h !== 12) h += 12;
         if (meridian.toUpperCase() === 'AM' && h === 12) h = 0;
