@@ -2,11 +2,10 @@
 
 import "../../styles/globals.css";
 
-import { useMemo, useState } from "react";
-
 import EventCard from "../../components/events/eventCard";
 import TextPage from "../../components/pages/textPage";
 import { getEvents } from "../../components/events/utils";
+import { useQuery } from "@tanstack/react-query";
 
 export type EventType = {
   name: string;
@@ -25,13 +24,20 @@ export type EventsType = {
 };
 
 const Events = () => {
-  const [events, setEvents] = useState<EventsType>({ upcoming: [], past: [] });
+  const {
+    data: events,
+    isLoading,
+    error,
+  } = useQuery({
+    queryKey: ["events"],
+    queryFn: getEvents,
+  });
 
-  useMemo(() => {
-    getEvents().then((events: EventsType) => {
-      setEvents(events);
-    });
-  }, []);
+  if (isLoading) return;
+
+  if (error) return <p>Error: {error.message}</p>;
+
+  if (!events) return <p>Please try again.</p>;
 
   const hasUpcomingEvents = events.upcoming.length > 0;
 
