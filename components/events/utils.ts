@@ -42,7 +42,6 @@ const formatEvents = (events: string[][]) : EventsType => {
         if (datePassed(eventObj.date, eventObj.endTime)) {
             past.push(eventObj)
         } else {
-            console.log(eventObj)
             upcoming.push(eventObj)
         }
     })

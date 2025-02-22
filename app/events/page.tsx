@@ -59,7 +59,7 @@ const Events = () => {
           <EventCard
             key={event.name}
             event={event}
-            inverted={index % 2 !== 0}
+            inverted={(index + events.upcoming.length) % 2 !== 0}
           />
         );
       })}
