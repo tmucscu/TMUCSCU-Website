@@ -2,7 +2,7 @@
 
 import { useContext, useState } from "react";
 
-import { EventType } from "../../app/events/page";
+import { EventType } from "../../types/events";
 import PrimaryRoundButton from "../button/primaryRoundButton";
 import SecondaryRoundButton from "../button/secondaryRoundButton";
 import TextButton from "../button/textButton";
