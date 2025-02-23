@@ -18,7 +18,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     const token = req.headers.authorization?.split("Bearer ")[1];
 
     if (!token) {
-      console.error("bad token")
       return res.status(401).json({ error: "Unauthorized: No token provided" });
     }
 
@@ -29,11 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
     const timestamp = createTimestamp(data.date, data.endTime);
 
-    console.log("writing to Firestore:", {...data, timestamp});
-
     const docRef = await firestore.collection("events").add({...data, timestamp});
-
-    console.log("Firestore Write Success:", docRef.id);
 
     return res.status(200).json({ id: docRef.id });
   } catch (error) {
