@@ -8,6 +8,7 @@ import AdminInput from "../AdminInput";
 import AdminTextArea from "../AdminTextArea";
 import SecondaryRoundButton from "../../../components/button/secondaryRoundButton";
 import { auth } from "../../../firebase";
+import { doesWindowExist } from "../../utils";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { validateDate } from "../utils";
@@ -37,7 +38,8 @@ const AdminDashboard = () => {
   const [uploading, setUploading] = useState(false);
 
   if (!user) {
-    router.push("/admin");
+    if (doesWindowExist) router.push("/admin");
+
     return null;
   }
 
@@ -48,7 +50,8 @@ const AdminDashboard = () => {
     if (!user) {
       alert("User is not authenticated. Please sign in!");
       setUploading(false);
-      router.push("/admin");
+      if (doesWindowExist) router.push("/admin");
+
       return;
     }
 

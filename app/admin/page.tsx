@@ -7,6 +7,7 @@ import React from "react";
 import SecondaryRoundButton from "../../components/button/secondaryRoundButton";
 import TextPage from "../../components/pages/textPage";
 import { auth } from "../../firebase";
+import { doesWindowExist } from "../utils";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
@@ -24,7 +25,7 @@ const AdminLogin = () => {
   const submitLogin = handleSubmit(async (data) => {
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      router.push("/admin/dashboard");
+      if (doesWindowExist) router.push("/admin/dashboard");
     } catch (err) {
       alert(`Incorrect email and/or password`);
       reset({ email: data.email, password: "" });
