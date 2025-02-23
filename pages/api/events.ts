@@ -1,15 +1,17 @@
+import { EventStatus, EventType } from '../../types/events';
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 
-import axios from 'axios';
+import { db } from "../../firebase";
 
 type Data = {
-    events: string[][];
+    events: EventType[];
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   return new Promise<void>((resolve) => {
-    getEvents("Current").then((imageIds) => {
-      res.status(200).json({ events: imageIds });
+    getEvents().then((events) => {
+      res.status(200).json({ events: events });
       resolve();
     }).catch((error) => {
       console.error(`ERROR: ${error}`)
@@ -19,26 +21,26 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   });
 }
 
-const getEvents = (rangeTitle: string) => {
-    const apiKey = process.env.GDRIVE_API_KEY;
-    const sheetID = process.env.GDRIVE_SHEET_ID;    
-
-    const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${rangeTitle}!A2:H30?key=${apiKey}`;
-
-    return axios
-      .get(url)
-      .then((response) => {
-        if (response.status === 200) {
-            return response.data.values;
-        } else {
-          console.error(
-            `Error: ${response.status} - ${response.data.error.message}`
-          );
-          return [];
-        }
-      })
-      .catch((error) => {
-        console.error(`Error: ${error.message}`);
-        return [];
-      });
-  };
+const getEvents = async (): Promise<EventType[]> => {
+  try {
+    const eventsRef = collection(db, "events");
+    const q = query(eventsRef, orderBy("timestamp", "desc"));
+    const snapshot = await getDocs(q);
+    const now = new Date()
+    
+    const events: EventType[] = snapshot.docs.map(doc => {
+      const data = doc.data();
+      return {
+      id: doc.id,
+      ...data,
+      details: data.details.replace(/\\n/g, "\n"),
+      status: data.timestamp.toDate() < now ?  EventStatus.PAST : EventStatus.UPCOMING
+    } as EventType });
+    
+    return events;
+    
+  } catch (error) {
+    console.error("Error fetching events:", error);
+    return [];
+  }
+}
