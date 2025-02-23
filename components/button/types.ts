@@ -1,12 +1,12 @@
 import { MouseEventHandler } from "react";
 
-export type ButtonType = {
+export interface ButtonType extends React.ButtonHTMLAttributes<HTMLButtonElement>  {
     text: string;
-    onClick: MouseEventHandler<HTMLButtonElement>;
-  };
+    onClick?: MouseEventHandler<HTMLButtonElement>;
+}
   
-  export type LinkTextButtonType = {
-    text: string;
-    link: string;
-    external?: boolean;
-  };
+export type LinkTextButtonType = {
+  text: string;
+  link: string;
+  external?: boolean;
+};
