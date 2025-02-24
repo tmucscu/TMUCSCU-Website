@@ -3,6 +3,7 @@
 import "../../../styles/globals.css";
 
 import React, { useEffect, useState } from "react";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 
 import AdminEventCard from "../../../components/admin/AdminEventCard";
 import AdminEventForm from "../../../components/admin/AdminEventForm";
@@ -11,10 +12,10 @@ import { ClipLoader } from "react-spinners";
 import { EventType } from "../../../types/events";
 import { Modal } from "@mui/material";
 import PrimaryRoundButton from "../../../components/button/primaryRoundButton";
+import SecondaryRoundButton from "../../../components/button/secondaryRoundButton";
 import { auth } from "../../../firebase";
 import { doesWindowExist } from "../../utils";
 import { getEvents } from "../../../components/events/utils";
-import { onAuthStateChanged } from "firebase/auth";
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 
@@ -81,18 +82,26 @@ const AdminDashboard = () => {
           }}
         />
       </Modal>
+      <div className="flex justify-between items-center">
+        <p></p>
+        <div className="flex gap-2">
+          <PrimaryRoundButton
+            text="Add an Event"
+            onClick={() => {
+              setOpenModal(true);
+            }}
+          />
+          <SecondaryRoundButton
+            text="Logout"
+            onClick={() => {
+              signOut(auth);
+            }}
+          />
+        </div>
+      </div>
       {hasUpcomingEvents ? (
         <div>
-          <div className="flex justify-between items-center">
-            <h1 className="text-left pt-20">Upcoming Events</h1>
-            <PrimaryRoundButton
-              text="Add an Event"
-              className="text-right"
-              onClick={() => {
-                setOpenModal(true);
-              }}
-            />
-          </div>
+          <h1 className="pt-10">Upcoming Events</h1>
 
           {events.upcoming.map((event: EventType, index: number) => {
             return (
@@ -106,17 +115,18 @@ const AdminDashboard = () => {
         </div>
       ) : null}
       <h1 className="pb-[21px]">Past Events</h1>
-      {events.past.map((event: EventType, index: number) => {
-        delete event.signUpLink;
-
-        return (
-          <AdminEventCard
-            key={event.id}
-            event={event}
-            inverted={(index + events.upcoming.length) % 2 !== 0}
-          />
-        );
-      })}
+      <div>
+        {events.past.map((event: EventType, index: number) => {
+          delete event.signUpLink;
+          return (
+            <AdminEventCard
+              key={event.id}
+              event={event}
+              inverted={(index + events.upcoming.length) % 2 !== 0}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
