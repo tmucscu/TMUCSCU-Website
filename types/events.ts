@@ -15,6 +15,8 @@ export type EventType = {
     signUpLink?: string;
     status: EventStatus;
   };
+
+  export type EventTypeFirestore = Omit<EventType, "status">
   
   export type EventsType = {
     upcoming: EventType[];

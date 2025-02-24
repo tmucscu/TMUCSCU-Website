@@ -2,17 +2,15 @@
 
 // TODO: Needs a major clean up with navbar.tsx
 
-import {
-  ExternalNavbarLink,
-  NavbarTitles,
-  isExternalNavbarLink,
-} from "../navbar/navbar";
 import React, { useState } from "react";
 import { RouteTypes, Routes } from "../constants";
 
 import BurgerMenu from "./burgerMenu";
+import { ExternalNavbarLink } from "../navbar/navbar";
 import Link from "next/link";
+import { NavbarTitles } from "../navbar/constants";
 import clsx from "clsx";
+import { isExternalNavbarLink } from "../navbar/utils";
 import logo from "../../public/csculogo.png";
 import { usePathname } from "next/navigation";
 
