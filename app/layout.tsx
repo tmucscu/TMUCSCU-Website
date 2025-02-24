@@ -1,12 +1,7 @@
 import { Kulim_Park } from "next/font/google";
-import type { Metadata } from "next";
 import { QueryProvider } from "./context/EventContext.tsx";
 import { Roboto } from "next/font/google";
 import { WidthProvider } from "./context/WidthContext.tsx";
-
-export const metadata: Metadata = {
-  title: "TMU CSCU",
-};
 
 const kulim_park = Kulim_Park({
   subsets: ["latin"],

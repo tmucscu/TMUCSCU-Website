@@ -47,7 +47,7 @@
     "components/pages/textPage.tsx",
     "components/carousel/imageCarousel.tsx",
     ".next/types/**/*.ts"
-  ],
+, "components/admin/AdminEventForm.tsx"  ],
   "exclude": [
     "./node_modules"
   ],

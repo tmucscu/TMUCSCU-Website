@@ -2,18 +2,32 @@
 
 import "../../styles/globals.css";
 
+import React, { useEffect, useState } from "react";
+import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+
 import AdminInput from "./AdminInput";
-import React from "react";
 import SecondaryRoundButton from "../../components/button/secondaryRoundButton";
 import TextPage from "../../components/pages/textPage";
 import { auth } from "../../firebase";
 import { doesWindowExist } from "../utils";
-import { signInWithEmailAndPassword } from "firebase/auth";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 
 const AdminLogin = () => {
   const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (authenticatedUser) => {
+      if (authenticatedUser && doesWindowExist) {
+        router.push("/admin/dashboard");
+      } else {
+        setLoading(false);
+      }
+    });
+
+    return () => unsubscribe();
+  }, [router]);
 
   const {
     register,
@@ -21,6 +35,10 @@ const AdminLogin = () => {
     reset,
     formState: { errors },
   } = useForm();
+
+  if (loading) {
+    return null;
+  }
 
   const submitLogin = handleSubmit(async (data) => {
     try {

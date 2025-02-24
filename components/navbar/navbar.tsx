@@ -6,19 +6,12 @@ import { ReactNode, useContext } from "react";
 import { RouteTypes, Routes } from "../constants";
 
 import Link from "next/link";
+import { NavbarTitles } from "./constants.ts";
 import { WidthContext } from "../../app/context/WidthContext.tsx";
 import clsx from "clsx";
+import { isExternalNavbarLink } from "./utils.ts";
 import logo from "../../public/csculogo.png";
 import { usePathname } from "next/navigation";
-
-export const NavbarTitles = {
-  ABOUT: "ABOUT",
-  TEAM: "TEAM",
-  EVENTS: "EVENTS",
-  MEETING_MINUTES: "MEETING MINUTES",
-  CONTACT: "CONTACT",
-  WIKI: "WIKI",
-};
 
 export const ExternalNavbarLink = ({
   href,
@@ -32,10 +25,6 @@ export const ExternalNavbarLink = ({
       {children}
     </a>
   );
-};
-
-export const isExternalNavbarLink = (routeKey: string) => {
-  return routeKey === "MEETING_MINUTES" || routeKey === "WIKI";
 };
 
 const NavbarTitle = ({ routeKey }: { routeKey: RouteTypes }) => {
