@@ -69,7 +69,7 @@ const About = () => {
         we’d love to <LinkTextButton text="hear from you!" link="/contact" />
         <br />
         <br />
-        <TextPage.Subheader>2024-2025 Sponsors</TextPage.Subheader>
+        <TextPage.Subheader>2025-2026 Sponsors</TextPage.Subheader>
         <TextPage.Body>
           <SponsorGallery images={sponsors.yearly} />
         </TextPage.Body>
