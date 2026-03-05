@@ -1,36 +1,35 @@
 {
   "President": [
     {
-      "name": "Andrae Cari",
+      "name": "Hadi Jafar",
       "position": "President",
       "email": "president@tmucscu.com",
-      "imageId": "18Olsqz6rBOg-2AM5wiEMmhG42e0MVRX3"
+      "imageId": "1tad1Bja_xPzLNnTnwjEvMw-aoTGZ_kCy"
     }
   ],
   "Executives": [
     {
-      "name": "Jennifer Chung",
+      "name": "Amitoz Banga",
       "position": "VP Operations",
       "email": "operations@tmucscu.com",
-      "imageId": "1qX9gZMRIIz77NrYxXxwMtm3xJYkx3xZT"
+      "imageId": "1yUqfJYKCQDarLU34uLJ0-YajARCdNoFi"
     },
     {
-      "name": "Thao Nguyen",
+      "name": "Emaan Iqbal",
       "position": "VP Academics",
-      "email": "academics@tmucscu.com",
-      "imageId": "1eB54SP0WXFU-QgwDC2ZC6IE9NmRFiPce"
+      "email": "academics@tmucscu.com"
     },
     {
-      "name": "Brian Lee",
+      "name": "Nehal Goel",
       "position": "VP Student Life",
       "email": "studentlife@tmucscu.com",
-      "imageId": "19YS8vjoRZjhjJtCdSGPUDrwjlUC-qUyX"
+      "imageId": "1q5cI1wQqQW4hX3Uc9MbbEW4BY-mkDlyz"
     },
     {
-      "name": "Sofia Pham",
+      "name": "Ryan Pham",
       "position": "VP Finance",
       "email": "finance@tmucscu.com",
-      "imageId": "1rkSigAt0JZPWD6EUBRfnxd4GTd6hX24R"
+      "imageId": "1_aEj-R6RSEhnGAIPKG_7p7NcyMrEPJZB"
     },
     {
       "name": "Karson Chan",
@@ -39,74 +38,67 @@
       "imageId": "1D8f7LmDoWn06lYnhMAbHZRV8f7A-yP43"
     },
     {
-      "name": "Hadi Jafar",
+      "name": "Teodor Cirstoiu",
       "position": "VP Careers & Co-op",
       "email": "careersandcoop@tmucscu.com",
-      "imageId": "1C05oWENhAWiV_fcakF5giKPNyVL8gKzM"
+      "imageId": "1ftJgXGbw-6VAeZOAl8UvMDGHrJ9qKVs6"
     }
   ],
   "Representatives": [
     {
-      "name": "Dylan Ha",
+      "name": "Stephen Tao",
       "position": "Fourth Year Rep",
-      "email": "dylan.ha@torontomu.ca",
-      "imageId": "1ia-ktQ4F1tAj6FeBebYHMw2YLIxug028"
-    },
-    {
-      "name": "Osanyem Osadebe",
-      "position": "Fourth Year Rep",
-      "email": "oosadebe@torontomu.ca",
-      "imageId": "1XgwLV05jBJYUc8Tl43gIpHB_Xs0K1C52"
+      "email": "s1tao@ryerson.ca",
+      "imageId": "1Ine2D4hG7z2RNUdUgJaqeyBXCEDCYoxD"
     },
     {
       "name": "Rajab Rehan",
-      "position": "Third Year Rep",
+      "position": "Fourth Year Rep",
       "email": "rajab.rehan@torontomu.ca",
-      "imageId": "1BNha_2j9jvcb3aj1-GElGdGbEQoXyCDM"
+      "imageId": "1Akr3aetgT7zk_L-24i-IYo9_xY9xwV-q"
     },
     {
-      "name": "Muhammad Hanan",
+      "name": "Suhail Moeen",
+      "position": "Third Year Rep",
+      "email": "suhail.moeen@torontomu.ca",
+      "imageId": "1iydDzuqr7kbgtaHkXwhYbHGPsd_3W637"
+    },
+    {
+      "name": "Fatima Rehan",
       "position": "Second Year Rep",
-      "email": "m1hanan@torontomu.ca",
-      "imageId": "1Sj79tNZaj-mvhKyYuyyT5iqwzBbb4FnU"
+      "email": "f1rehan@torontomu.ca",
+      "imageId": "1Ns1F0ZicFvjWPGsULyUKcdK3CvNi-LeO"
     },
     {
-      "name": "Rayan Roshan",
+      "name": "Pranavi Landeri",
       "position": "First Year Rep",
-      "email": "rayan.roshan@torontomu.ca",
-      "imageId": "1gXOAwvZEwO-XxM2l3K6MqvTy83TJAVPX"
+      "email": "pranavi.landeri@torontomu.ca",
+      "imageId": "1pinsoP8t39CRkzLOaaI2guShMfb2FJZ4"
     }
   ],
   "Marketing": [
     {
-      "name": "Vivian Fang",
-      "position": "Marketing Director",
+      "name": "Andrae Cari",
+      "position": "Co-Marketing Director",
       "email": "marketing@tmucscu.com",
-      "imageId": "1EDy0l8Lu0X1qhQ6VH2a26F8Bwr0w6-D9"
+      "imageId": "1rHA_KmDN5Lx7VhN6kMNa7I5QBV4V0fkM"
     },
     {
-      "name": "Aleena Ayub",
-      "position": "Graphic Designer",
-      "email": "aleena.ayub@torontomu.ca",
-      "imageId": "1G2X6JF6jd32lfi8kfNlLXjkpaozJbPw6"
+      "name": "Vivian Fang",
+      "position": "Co-Marketing Director",
+      "email": "marketing@tmucscu.com",
+      "imageId": "1LIc7Gvfh8GQdiD7Ti0PCbTOBKlP9GxNl"
     },
     {
-      "name": "Julia Szubert",
+      "name": "Brian Lee",
       "position": "Photographer",
-      "email": "julia.szubert@torontomu.ca",
-      "imageId": "1MoGUkjKiqqqqN27-mIFj3ETgQgZsBAeT"
+      "email": "b14lee@torontomu.ca",
+      "imageId": "162a5zOUxyNkDLNVBdMYCh38YO1YKnWLK"
     },
     {
-      "name": "Inaya Rajwani",
+      "name": "Brendon Cari",
       "position": "Marketing Associate",
-      "email": "inaya.rajwani@torontomu.ca",
-      "imageId": "1AZHhkrglNLV7Db2G4EQSeQglYISQwAQQ"
-    },
-    {
-      "name": "Nehal Goel",
-      "position": "Marketing Associate",
-      "email": "nehal.goel@torontomu.ca",
-      "imageId": "1Khn2TszptA9VRD4Ex6Ho2iTfeHxHe1OT"
+      "email": "brendon.cari@torontomu.ca"
     }
   ],
   "Deputies": [
@@ -114,69 +106,80 @@
       "name": "Jeffrey Ye",
       "position": "Deputy VP Operations",
       "email": "jeffrey.ye@torontomu.ca",
-      "imageId": "1585pYX-RVUirStBEliT4a0Ui5Yom5ooQ"
+      "imageId": "10QsHYHFnl9RRFkijQcI_H2q069_8WKJp"
     },
     {
-      "name": "Hamidreza Khoramrokh",
+      "name": "Ian Macwan",
       "position": "Deputy VP Academics",
-      "email": "hamidreza.khoramrokh@torontomu.ca",
-      "imageId": "1YpoMjhi8HDR-ida8wtNOT8NqRga8rq_l"
+      "email": "ian.macwan@torontomu.ca",
+      "imageId": "1RTl788jm8Zsh5RulCcZxI2cJRvis5QWZ"
     },
     {
-      "name": "Stephen Tao",
+      "name": "Riyan Kassam",
       "position": "Deputy VP Student Life",
-      "email": "s1tao@torontomu.ca",
-      "imageId": "1Ych8MK8MWhN3bJ9ebygu6wb3CFBCvudi"
+      "email": "riyan.kassam@torontomu.ca",
+      "imageId": "1NRphUlwRsrSTRJZ9K0dstdF8eCAqRGcX"
     },
     {
-      "name": "Ryan Pham",
+      "name": "Sofia Pham",
       "position": "Deputy VP Finance",
-      "email": "r1pham@torontomu.ca",
-      "imageId": "1MuxruuRsLlqhN6vuhqkPzmRuv9KfnMAk"
+      "email": "sofia.pham@torontomu.ca",
+      "imageId": "1qAg5Zfo-fOIX8ljgFToMW59SP60u0e0A"
     },
     {
-      "name": "Teodor Cirstoiu",
+      "name": "Mason Fang",
       "position": "Deputy VP Careers & Co-op",
-      "email": "tcirstoiu@torontomu.ca",
-      "imageId": "19uaUyiUre9AMEsFdQQz9SDpI3gBkCLW7"
+      "email": "mason.fang@torontomu.ca",
+      "imageId": "1OlUmkQGwcEU9hCyk6at_NmBo4ERwIuQw"
     },
     {
-      "name": "Amitoz Banga",
+      "name": "Faryal Siddiqui",
+      "position": "Deputy VP Careers & Co-op",
+      "email": "faryal.siddiqui@torontomu.ca",
+      "imageId": "1936DcrKyikX8VnjsejQw73br1Qn3zgYm"
+    },
+    {
+      "name": "Maruf Ahmed",
+      "position": "Deputy Third Year Rep",
+      "email": "maruf.ahmed@torontomu.ca",
+      "imageId": "1H0r-5KJb_dUAI09XxzDHNFc-43DKrb0t"
+    },
+    {
+      "name": "Jacob Mobin",
       "position": "Deputy Second Year Rep",
-      "email": "amitoz.banga@torontomu.ca",
-      "imageId": "1lf2ZoS-rP0mmG0dbmFuF-81-MLn9So7q"
+      "email": "jacob.mobin@torontomu.ca",
+      "imageId": "1_Lw8A6rbMNwdzhe43QHBqB1kt0yMADN8"
     },
     {
-      "name": "Fatima Rehan",
+      "name": "Ayu Gupta",
       "position": "Deputy First Year Rep",
-      "email": "f1rehan@torontomu.ca",
-      "imageId": "1yhgKUfpqyI5RtiNc4THSv-NUEVJehDtO"
+      "email": "ayu.gupta@torontomu.ca"
     },
     {
-      "name": "Jason Truong",
+      "name": "Jennifer Chung",
       "position": "Systems Administrator",
       "email": "sysadmin@tmucscu.com",
-      "imageId": "1FwgpgnGzWR9SjPTncedmo94wcPq_jUVv"
+      "imageId": "1vzSkVUIjY6Ukf0mDEy4RCwmVrzosHMRu"
     }
   ],
   "Associates": [
     {
-      "name": "Ian Macwan",
+      "name": "May Le",
       "position": "Academics Associate",
-      "email": "ian.macwan@torontomu.ca",
-      "imageId": "1QHgi_S_4ICYHXvZvG7Rjkf41fsoeOzyZ"
+      "email": "van.le@torontomu.ca",
+      "imageId": "1SZoQo8SSUhoZ5YnMTtcHUaMuHlGdy8Vm"
     },
     {
-      "name": "Belal Armanazi",
+      "name": "Saloni Patel",
       "position": "Student Life Associate",
-      "email": "belal.armanazi@torontomu.ca",
-      "imageId": "1dBnDuR57GCA3FkPZ98AMKNHJtVbiTBbf"
+      "email": "saloni.m.patel@torontomu.ca",
+      "imageId": "142pMu_KPsAfU-zVsT2ghQLRijGPz8N8t"
     },
     {
-      "name": "Faryal Siddiqui",
+      "name": "Jennifer Nguyen",
       "position": "Careers & Co-op Associate",
-      "email": "faryal.siddiqui@torontomu.ca",
-      "imageId": "1zEHagixGEu84II9gAmqz9N2ksYc4J5PF"
+      "email": "jennifer.n.nguyen@torontomu.ca",
+      "imageId": "1kZiPYKh8CXOxTw0eU31fonTYGY6S7LcF"
     }
   ]
 }
